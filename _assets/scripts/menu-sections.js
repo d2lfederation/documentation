@@ -1,7 +1,6 @@
 (function() {
 
 	function sectionClick() {
-		console.log('click', this.parentNode.classList.contains('side-nav-expanded'));
 		if (this.parentNode.classList.contains('side-nav-expanded')) {
 			this.parentNode.classList.remove('side-nav-expanded');
 		} else {
