@@ -2,18 +2,18 @@
 	"items": [
 		{
 			"text": "Introduction",
-			"url": "/"
+			"url": ""
 		},
 		{
 			"text": "Style",
 			"items": [
 				{
 					"text": "Color",
-					"url": "/style/color.html"
+					"url": "style/color.html"
 				},
 				{
 					"text": "Iconography",
-					"url": "/style/iconography.html"
+					"url": "style/iconography.html"
 				}
 			]
 		},
@@ -22,11 +22,11 @@
 			"items": [
 				{
 					"text": "Buttons",
-					"url": "/components/buttons.html"
+					"url": "components/buttons.html"
 				},
 				{
 					"text": "Links",
-					"url": "/components/links.html"
+					"url": "components/links.html"
 				}
 			]
 		},
@@ -35,25 +35,25 @@
 			"items": [
 				{
 					"text": "Web Components",
-					"url": "/developers/web-components.html"
+					"url": "developers/web-components.html"
 				},
 				{
 					"text": "Use Components",
-					"url": "/developers/use-components.html"
+					"url": "developers/use-components.html"
 				},
 				{
 					"text": "Optimize for Production",
-					"url": "/developers/optimize-for-production.html"
+					"url": "developers/optimize-for-production.html"
 				},
 				{
 					"text": "Resources",
-					"url": "/developers/resources.html"
+					"url": "developers/resources.html"
 				}
 			]
 		},
 		{
 			"text": "Accessibility",
-			"url": "/accessibility/"
+			"url": "accessibility.html"
 		}
 	]
 }

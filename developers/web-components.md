@@ -4,7 +4,7 @@ title: Web Components
 
 The main goal of Brightspace UI: to provide reusable, accessible UI components which can easily and seamlessly integrate into your web application, no matter the technologies or frameworks being used. Server-side rendering, client-side rendering, React, Angular, vanilla HTML/JS/CSS -- Brightspace UI needs to work with them all.
 
-<img src="/images/web-components-logo.svg" alt="web components logo" style="padding-left: 50px;width:200px;height:133px;" />
+<img src="{{ site.baseurl }}images/web-components-logo.svg" alt="web components logo" style="padding-left: 50px;width:200px;height:133px;" />
 
 ### A Brief Introduction to Web Components
 
@@ -25,7 +25,7 @@ While the standards bodies and browser vendors work to solidify the Web Componen
 
 Polymer is a [library built by Google](https://www.polymer-project.org) aimed at making the development of Web Components easier. It extends the existing browser polyfills, providing an API to easily leverage custom elements, HTML imports, templates and to simulate shadow DOM. Polymer also comes with a great set of tools to help document, test and optimize your Web Component-based application.
 
-<img src="/images/polymer-logo.png" alt="Polymer logo" style="padding-left: 50px;width:200px;height:136px;" />
+<img src="{{ site.baseurl }}images/polymer-logo.png" alt="Polymer logo" style="padding-left: 50px;width:200px;height:136px;" />
 
 All Brightspace UI components are built using Google Polymer.
 

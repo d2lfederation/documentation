@@ -4,7 +4,7 @@ title: Use Components
 
 ## Individual Components & Semantic Versioning
 
-Each Brightspace UI component has its own code repository on GitHub [under the Brightspace organization](https://github.com/Brightspace/). You'll find links to their repositories on each of the component documentation pages.
+Each Brightspace UI component has its own code repository on GitHub [under the Brightspace UI organization](https://github.com/BrightspaceUI/). You'll find links to their repositories on each of the component documentation pages.
 
 Because components are independent of each other, they are versioned separately. This allows for major changes to be made to one component without impacting the others. It also means you can choose the version of each component to use in your application, and can also choose when to upgrade to pick up new features.
 
@@ -20,7 +20,7 @@ For example, if the version is `1.8.5` in the form `MAJOR.MINOR.PATCH`:
 
 The best way to install and use Brightspace UI components is with Bower, a simple package manager for the web. To install Bower, follow the instructions on the [Bower web site](https://bower.io/).
 
-<img src="/images/bower-logo.png" alt="Bower logo" style="padding-left: 50px;width:200px;height:176px;" />
+<img src="{{ site.baseurl }}images/bower-logo.png" alt="Bower logo" style="padding-left: 50px;width:200px;height:176px;" />
 
 Once Bower is installed, you can then use it from the command line to install individual Brightspace UI components. Bower will automatically make sure any dependencies are installed as well.
 
@@ -58,7 +58,7 @@ Once the Brightspace UI components are installed, the next step is to consume th
 
 ### Include the Polyfill
 
-As was mentioned in the [Introduction to Web Components](/developers/web-components.html), many browsers have yet to implement all (or any) of the Web Component features. Until they do, a polyfill is needed.
+As was mentioned in the [Introduction to Web Components]({{ site.baseurl }}developers/web-components.html), many browsers have yet to implement all (or any) of the Web Component features. Until they do, a polyfill is needed.
 
 {% example type: shell, title: "You can install the polyfill using Bower:" %}
 bower install --save webcomponentsjs
