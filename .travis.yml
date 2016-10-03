@@ -33,7 +33,7 @@ deploy:
     tags: false
     all_branches: true
 after_deploy:
-  - "echo 'Deployed to http://ui.edev.com/${TRAVIS_COMMIT}/'"
+  - echo "Deployed to http://ui.edev.com/$TRAVIS_COMMIT/"
 env:
 
   global:
