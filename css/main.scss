@@ -3,6 +3,7 @@
 ---
 @charset "utf-8";
 
+$baseurl: "{{ site.baseurl }}";
 $header-height: 60px;
 $base-font-size: 20px;
 $side-nav-width: 280px;

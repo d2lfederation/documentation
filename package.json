@@ -3,7 +3,7 @@
   "description": "Documentation for Brightspace UI",
   "private": true,
   "scripts": {
-    "build:wc": "vulcanize _wc/wc.html > wc.gen.html",
+    "build:wc": "vulcanize _wc/wc.html > wc.gen.html --inline-scripts",
     "build:site": "jekyll build",
     "build": "npm run build:wc && npm run build:site",
     "postinstall": "bower install"

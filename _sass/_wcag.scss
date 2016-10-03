@@ -6,11 +6,11 @@
 	padding-left: 105px;
 }
 .wcag-a {
-	background-image: url("/images/wcag2-a.png");
+	background-image: url($baseurl + "images/wcag2-a.png");
 }
 .wcag-aa {
-	background-image: url("/images/wcag2-aa.png");
+	background-image: url($baseurl + "images/wcag2-aa.png");
 }
 .wcag-aaa {
-	background-image: url("/images/wcag2-aaa.png");
+	background-image: url($baseurl + "images/wcag2-aaa.png");
 }

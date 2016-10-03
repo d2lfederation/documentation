@@ -1,12 +1,15 @@
-language: node_js
-node_js: stable
+language: ruby
+rvm:
+  - 2.2
 before_install:
-  - rvm install 2.2.2
+  - nvm install stable
 install:
   - gem install jekyll pygments.rb jekyll-minibundle
+  - nvm use stable
   - npm install
 script:
-  - npm run build
+  - npm run build:wc
+  - if [ "x$TRAVIS_TAG" != "x" ]; then jekyll build; else jekyll build -b /$TRAVIS_COMMIT/; fi
 deploy:
 - provider: s3
   access_key_id: "AKIAJVDO2NQZ5NOFDA6Q"
@@ -30,8 +33,9 @@ deploy:
     tags: false
     all_branches: true
 after_deploy:
-  - "echo 'Deployed to http://ui.edev.com/${TRAVIS_COMMIT}/'"
+  - echo "Deployed to http://ui.edev.com/$TRAVIS_COMMIT/"
 env:
+
   global:
   # S3_SECRET_TEST
   - secure: "jvDEHvWYhbuLPky0pwGowjqA4GbGQbpDRbChLEkF5ezNQC3IHLiWLlrRm28qXsvCnzbgmsyK3hEX/BTUfrOET1v6iQsvKPjq7uPo2DcFZIjypNk0koT/+zqMsZZPreYzDHoNtf7MKaZkCfwgoumv30E5zqqiEz1HCkN7eXnf6tKqMDBnEjk7SlXhi1Kz745VAms3uP0V8HsUAaGW8zuANpV74iBE2dTrP1i2lqzXmSAwlVrfWOo8CE6mF5xE6jpi6etSI+m5Vw3CMTy9F7VVStNAEpaPGMpZMkGHSnZn/KlOu/ECZCgJ2znyl56AA1lysJwF7oXnm8gt+2d/yT5/wemAPhsRD0BGy9wdZ/wme/F+XavP24LIbmgXdYDxNq+gxLLT2R0gZ1q8QER8AEjNUIy3eyHMFIGqbAUPFlp5DwhKFtmZs2VhF2GOZEkncy2HkGMXtfAjpyyX/V6tfviBAEvRH4d4miaqWSGUGphivkGPXxHjqZz7ko7Bgc7ubhAQWTFnXKpxtuSM7McOjjntj1wsk9mXOR6dV10k1Fa+nHMCT/90PRVM11sP/Od0bqaffRkL72sIRqUlLXLAxBA0LqxNL8qMAkfgxrTpIQMzOGJ1us2rvadx5JAVz7+rIFI0Jk5qp8/pwAP7zS98hNCcXiweJFkC/NjvPJepzzJGmXc="
