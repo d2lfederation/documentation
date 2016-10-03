@@ -7,3 +7,33 @@ install:
   - npm install
 script:
   - npm run build
+deploy:
+- provider: s3
+  access_key_id: "AKIAJVDO2NQZ5NOFDA6Q"
+  secret_access_key: "$S3_SECRET_PROD"
+  bucket: ui.valence.d2l.com
+  local-dir: _site
+  skip_cleanup: true
+  acl: public_read
+  on:
+    tags: true
+    all_branches: false
+- provider: s3
+  access_key_id: "AKIAJVDO2NQZ5NOFDA6Q"
+  secret_access_key: "$S3_SECRET_TEST"
+  bucket: ui.edev.d2l.com
+  local-dir: _site
+  upload-dir: "${TRAVIS_COMMIT}"
+  skip_cleanup: true
+  acl: public_read
+  on:
+    tags: false
+    all_branches: true
+after_deploy:
+  - "echo 'Deployed to http://ui.edev.com/${TRAVIS_COMMIT}/'"
+env:
+  global:
+  # S3_SECRET_TEST
+  - secure: "jvDEHvWYhbuLPky0pwGowjqA4GbGQbpDRbChLEkF5ezNQC3IHLiWLlrRm28qXsvCnzbgmsyK3hEX/BTUfrOET1v6iQsvKPjq7uPo2DcFZIjypNk0koT/+zqMsZZPreYzDHoNtf7MKaZkCfwgoumv30E5zqqiEz1HCkN7eXnf6tKqMDBnEjk7SlXhi1Kz745VAms3uP0V8HsUAaGW8zuANpV74iBE2dTrP1i2lqzXmSAwlVrfWOo8CE6mF5xE6jpi6etSI+m5Vw3CMTy9F7VVStNAEpaPGMpZMkGHSnZn/KlOu/ECZCgJ2znyl56AA1lysJwF7oXnm8gt+2d/yT5/wemAPhsRD0BGy9wdZ/wme/F+XavP24LIbmgXdYDxNq+gxLLT2R0gZ1q8QER8AEjNUIy3eyHMFIGqbAUPFlp5DwhKFtmZs2VhF2GOZEkncy2HkGMXtfAjpyyX/V6tfviBAEvRH4d4miaqWSGUGphivkGPXxHjqZz7ko7Bgc7ubhAQWTFnXKpxtuSM7McOjjntj1wsk9mXOR6dV10k1Fa+nHMCT/90PRVM11sP/Od0bqaffRkL72sIRqUlLXLAxBA0LqxNL8qMAkfgxrTpIQMzOGJ1us2rvadx5JAVz7+rIFI0Jk5qp8/pwAP7zS98hNCcXiweJFkC/NjvPJepzzJGmXc="
+  # S3_SECRET_PROD
+  - secure: "iNnhilpA5DzB9ADjcNCs/YZVKaVADd5DCGTG9huNwjK69ohJBZzDDObMz36C/1sqdPNLlxB2m0PMawhBzjaMc0TlaTWQ/DFcO1JelW5gOaMrQxUP3vcK3KgD5ND7lK2KYlE50xNu/vlXmslQEEST5GyPEIntmhpBh+NpBx4JI581IKU+JCLB+/lVhzn6FaUBmk6CD0S+StjsDmchg2RoUHD7z9lmC2Bf2uANqd9mA6CxOvyaZ1+tnenDrf4jtbpkcsyj9N7ejIdMbhKSETnqE4H+pseVuQEDwogJCjwbvNsZojtiNdRGE65bLXRugMX9u2bI7EOVdwv4wLqWohkjsXkzileoI2sboRRe1vtqXCp0aV8Zs7F7NggVrJ9u8mZnHqJVEBu5LZH6LsqseCR0sXqVdXrJYlhzbZyKr7pxclob2jeFGJucDJdpN5FMih6MhhwPvPZp7IGVPO+7IPlD28dz7waLUVlu7zs/Mkvgu4bJhE5ITLRLJkE9ahXtfguNzKqcsC4OnthWw5J7lbMTDEMcrd+Ex5u2RMEsG7/+5c6wgC2gT4B29/IRGTDtAiEGBQm8FYElshczJNIzBFxwnO2ZMm9Njm/FrTfgYx22mmoLOP4aQ83S6tHCwF1PJEAiTYOon06f1eQmFl3pa8N6SVma8vMy4BmsXsqfPvrN5BM="
