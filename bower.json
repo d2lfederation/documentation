@@ -1,0 +1,29 @@
+{
+  "name": "brightspace-ui-documentation",
+  "description": "Documentation for Brightspace UI",
+  "private": true,
+  "authors": [
+    "D2L Corporation"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/BrightspaceUI/documentation",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "d2l-button": "^3.0.5",
+    "d2l-colors": "^2.1.0",
+    "d2l-dropdown": "^2.2.3",
+    "d2l-icons": "^2.9.6",
+    "d2l-image-action": "^0.5.1",
+    "d2l-link": "^3.1.1",
+    "d2l-offscreen": "^2.1.0",
+    "d2l-table": "^0.2.4",
+    "d2l-typography": "^4.1.0",
+    "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.10",
+    "polymer": "^1.5.0",
+    "susy": "^2.2.12"
+  }
+}

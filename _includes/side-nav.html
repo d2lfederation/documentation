@@ -1,0 +1,41 @@
+<div id="side-nav">
+	<div id="side-nav-mask"></div>
+	<nav class="side-nav-content">
+		<ul>
+		{% for section in site.data.menu.items %}
+			{% assign className = "" %}
+			{% if section.items %}
+				{% for subsection in section.items %}
+					{% if subsection.url == page.url %}
+						{% assign className = " side-nav-expanded" %}
+					{% endif %}
+				{% endfor %}
+			{% else %}
+				{% if section.url == page.url %}
+					{% assign className = " side-nav-selected" %}
+				{% endif %}
+			{% endif %}
+			<li class="side-nav-section{{ className }}">
+				{% if section.items %}
+				<a class="wc-skip">{{ section.text }}</a>
+				<div>
+					<ul>
+					{% for subsection in section.items %}
+						{% assign subClassName = "" %}
+						{% if subsection.url == page.url %}
+							{% assign subClassName = " side-nav-selected" %}
+						{% endif %}
+						<li class="side-nav-subsection{{ subClassName }}">
+							<a class="wc-skip" href="{{ subsection.url }}">{{ subsection.text }}</a>
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+				{% else %}
+				<a class="wc-skip" href="{{ section.url }}">{{ section.text }}</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+		<ul>
+	</nav>
+</div>

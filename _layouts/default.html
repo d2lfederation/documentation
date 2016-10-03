@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body class="d2l-typography" unresolved data-menu-state="closed">
+		{% include header.html %}
+		{% include side-nav.html %}
+		<div class="page-content">
+			<div class="page-wrapper">
+				{{ content }}
+			</div>
+		</div>
+		{% include footer.html %}
+{% minibundle js %}
+source_dir: _assets/scripts
+destination_path: assets/site
+baseurl: {{ site.baseurl }}
+assets:
+  - applyClasses
+  - applyWcs
+  - menu-sections
+  - menu-slide
+{% endminibundle %}
+	</body>
+</html>

@@ -1,0 +1,125 @@
+{
+	"primary": [
+		{
+			"name": "Carnelian",
+			"hex": "#e57231",
+			"rgb": "rgb(229, 114, 49)"
+		},
+		{
+			"name": "Celestine",
+			"hex": "#006fbf",
+			"rgb": "rgb(0, 111, 191)"
+		}
+	],
+	"secondary": [
+		{
+			"name": "Olivine",
+			"hex": "#46a661",
+			"rgb": "rgb(70, 166, 97)"
+		},
+		{
+			"name": "Citrine",
+			"hex": "#ffba59",
+			"rgb": "rgb(255, 186, 89)"
+		},
+		{
+			"name": "Cinnabar",
+			"hex": "#cd2026",
+			"rgb": "rgb(205, 32, 38)"
+		},
+		{
+			"name": "Zircon",
+			"hex": "#00bddd",
+			"rgb": "rgb(0, 189, 221)"
+		},
+		{
+			"name": "Azurite",
+			"hex": "#00a4c0",
+			"rgb": "rgb(153, 179, 100)"
+		},
+		{
+			"name": "Celestuba",
+			"hex": "#1c5295",
+			"rgb": "rgb(28, 82, 149)"
+		}
+	],
+	"grey": [
+		{
+			"name": "White",
+			"hex": "#ffffff",
+			"rgb": "rgb(255, 255, 255)"
+		},
+		{
+			"name": "Regolith",
+			"hex": "#f9fafb",
+			"rgb": "rgb(249, 250, 251)"
+		},
+		{
+			"name": "Woolonardo",
+			"hex": "#f2f3f5",
+			"rgb": "rgb(242, 243, 245)"
+		},
+		{
+			"name": "Gypsum",
+			"hex": "#e6eaf0",
+			"rgb": "rgb(230, 234, 240)"
+		},
+		{
+			"name": "Titanius",
+			"hex": "#d3d9e3",
+			"rgb": "rgb(211, 217, 227)"
+		},
+		{
+			"name": "Pressicus",
+			"hex": "#b9c2d0",
+			"rgb": "rgb(185, 194, 208)"
+		},
+		{
+			"name": "Galena",
+			"hex": "#7c8695",
+			"rgb": "rgb(124, 134, 149)"
+		},
+		{
+			"name": "Tungsten",
+			"hex": "#72777a",
+			"rgb": "rgb(114, 119, 122)"
+		},
+		{
+			"name": "Ferrite",
+			"hex": "#565a5c",
+			"rgb": "rgb(86, 90, 92)"
+		}
+	],
+	"tonal": [
+		{
+			"name": "Celestine Light",
+			"hex": "#f2f8fc",
+			"rgb": "rgb(242, 248, 252)"
+		},
+		{
+			"name": "Celestine Light 2",
+			"hex": "#99c5e5",
+			"rgb": "rgb(153, 197, 229)"
+		},
+		{
+			"name": "Olivine Light",
+			"hex": "#ecf6ee",
+			"rgb": "rgb(236, 246, 238)"
+		},
+		{
+			"name": "Olivine Light 2",
+			"hex": "#65b57b",
+			"rgb": "rgb(101, 181, 123)"
+		},
+		{
+			"name": "Zircon Light",
+			"hex": "#dbf5fa",
+			"rgb": "rgb(219, 245, 250)"
+		},
+		{
+			"name": "Zircon Light 2",
+			"hex": "#bdedf5",
+			"rgb": "rgb(189, 237, 245)"
+		}
+	]
+}

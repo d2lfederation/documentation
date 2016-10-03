@@ -1,0 +1,45 @@
+@import '../bower_components/d2l-colors/d2l-colors.scss';
+
+html {
+	font-size: $base-font-size;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+	background-color: $d2l-color-white;
+	margin: 0;
+	padding: $header-height 0 0 0;
+}
+
+hr {
+	border-top: none;
+	border-bottom: 1px solid $d2l-color-titanius;
+}
+
+blockquote {
+	border-left: 4px solid $d2l-color-titanius;
+	margin-left: 0;
+	padding-left: 1rem;
+}
+
+.docs-color {
+	display: inline-block;
+	font-size: 0.8rem;
+	margin: 0 1rem 1rem 0;
+	text-align: center;
+	width: 175px;
+	.docs-color-palette {
+		border: 1px solid $d2l-color-titanius;
+		border-radius: 0.8rem;
+		box-shadow: 0 1px 3px rgba(86,90,92,.1);
+		height: 75px;
+		margin-bottom: 0.2rem;
+	}
+}

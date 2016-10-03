@@ -1,0 +1,24 @@
+@import '../bower_components/susy/sass/susy';
+
+.splash {
+	max-width: 870px;
+	text-align: center;
+}
+
+.columns {
+	@include container();
+}
+.columns > .splash, .columns > hr, .columns > h2 {
+	@include span(12 of 12);
+}
+.col1, .col2 {
+	@include span(4 of 12);
+}
+.col3 {
+	@include span(4 at 9 of 12);
+}
+@media(max-width: $menu-breakpoint) {
+	.col1, .col2, .col3 {
+		@include span(12 of 12);
+	}
+}
