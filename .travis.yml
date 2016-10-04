@@ -8,7 +8,7 @@ install:
   - nvm use stable
   - npm install
 script:
-  - npm run build:wc
+  - npm run build
   - if [ "x$TRAVIS_TAG" != "x" ]; then jekyll build; else jekyll build -b /$TRAVIS_COMMIT/; fi
 deploy:
 - provider: s3

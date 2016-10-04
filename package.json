@@ -3,9 +3,8 @@
   "description": "Documentation for Brightspace UI",
   "private": true,
   "scripts": {
-    "build:wc": "vulcanize _wc/wc.html > wc.gen.html --inline-scripts",
-    "build:site": "jekyll build",
-    "build": "npm run build:wc && npm run build:site",
+    "prebuild": "rimraf _tmp && mkdir _tmp",
+    "build": "vulcanize _assets/web-components/wc.html --out-html _tmp/wc.gen.html --inline-scripts --strip-comments",
     "postinstall": "bower install"
   },
   "repository": {
@@ -20,12 +19,8 @@
   "homepage": "https://github.com/BrightspaceUI/documentation",
   "devDependencies": {
     "bower": "^1.7.9",
+    "rimraf": "^2.5.4",
     "uglify-js": "^2.7.3",
     "vulcanize": "^1.14.8"
-  },
-  "keywords": [
-    "d2l",
-    "valence-ui",
-    "vui"
-  ]
+  }
 }

@@ -16,21 +16,29 @@ To get started, follow [Jekyll's Quick-start guide](https://jekyllrb.com/docs/qu
 Once this repo is cloned and Jekyll is installed, use NPM to pull down a few more depdendencies:
 
 ```shell
+# only need to run once
 npm install
 ```
 
-To build the site to the `/_site` directory:
+To build the web components used in the documentation:
 ```shell
+# only need to run once, or when any new web components are added/changed
 npm run build
 ```
 
-Once the site is built once, you can also use Jekyll's [serve command](https://jekyllrb.com/docs/usage/) to automatically build the site, host it on a local server and watch for any changes you make and rebuild the site:
+Once the web components are built once, you can then use Jekyll's [build or serve commands](https://jekyllrb.com/docs/usage/).
 
+Building:
+```shell
+jekyll build
+```
+
+Building, serving and watching for changes:
 ```shell
 jekyll serve
 ```
 
-Jekyll isn't super clever, so if you make any changes to the site configuration, the web component imports or the plugins, you'll need to `npm run build` again.
+Jekyll `serve` isn't super clever, so if you make any changes to the site configuration or plugins you'll need to run `jekyll build` again.
 
 ### Writing Documentation
 
