@@ -102,11 +102,19 @@ Title of the document
 {% endwcag %}
 ```
 
-## Deploying the Site
+## Deploying
 
-The site uses Travis CI to automatically build and test the site after each commit.
+The site is deployed to Amazon S3 during the [Travis CI build step](https://travis-ci.org/BrightspaceUI/documentation/). A deployment will occur under two conditions:
 
-If a commit is tagged, Travis will also deploy the site to its bucket in AWS.
+### Pull Requests
+
+When a pull request is created, the site containing the changes from the pull request will be deployed to `/pr/<pull-request-number>/`. Any subsequent commits to that pull request will trigger a re-deploy which overwrites the original. For this reason, browser caching of the assets is disabled.
+
+### Tagged Commits
+
+Tagged commits are used to signify a major release of the documentation site. Do not use tags for any other purpose. When a tagged commit occurs, the site will be deployed to `/<tag-value>/`.
+
+At the same time, the root of the documentation site will have its redirect adjusted to point at the new tagged location.
 
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-docs
 [ci-image]: https://travis-ci.org/Brightspace/valence-ui-docs.svg?branch=master
