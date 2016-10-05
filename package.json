@@ -5,7 +5,8 @@
   "scripts": {
     "prebuild": "rimraf _tmp && mkdir _tmp",
     "build": "vulcanize _assets/web-components/wc.html --out-html _tmp/wc.gen.html --inline-scripts --strip-comments",
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "publish-s3": "node _publisher/publisher"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "bower": "^1.7.9",
     "rimraf": "^2.5.4",
+    "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d",
     "uglify-js": "^2.7.3",
     "vulcanize": "^1.14.8"
   }
