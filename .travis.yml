@@ -9,7 +9,7 @@ install:
   - npm install
 script:
   - npm run build
-  - if [ "x$TRAVIS_PULL_REQUEST" != "x" ]; then jekyll build -b /pr/$TRAVIS_PULL_REQUEST/; else jekyll build; fi
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then jekyll build -b /pr/$TRAVIS_PULL_REQUEST/; else jekyll build; fi
 after_success:
   - '[ "$TRAVIS_SECURE_ENV_VARS" = "true" ] && npm run publish-s3'
 env:
