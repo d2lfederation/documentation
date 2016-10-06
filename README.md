@@ -1,7 +1,7 @@
 # Brightspace UI Documentation
 [![Build status][ci-image]][ci-url]
 
-Source files for generating the documentation for Brightspace UI at [http://ui.valence.d2l.com](http://ui.valence.d2l.com/).
+Source files for generating the documentation for Brightspace UI at [https://d2qxiwojgs5u8k.cloudfront.net](https://d2qxiwojgs5u8k.cloudfront.net/).
 
 ## Installation & Setup
 
@@ -108,13 +108,17 @@ The site is deployed to Amazon S3 during the [Travis CI build step](https://trav
 
 ### Pull Requests
 
-When a pull request is created, the site containing the changes from the pull request will be deployed to `/pr/<pull-request-number>/`. Any subsequent commits to that pull request will trigger a re-deploy which overwrites the original. For this reason, browser caching of the assets is disabled.
+When a pull request is created, the site containing the changes from the pull request will be deployed to `http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/<pull-request-number>/`. Any subsequent commits to that pull request will trigger a re-deploy which overwrites the original.
+
+To allow for further changes, browser caching of the assets is disabled.
 
 ### Tagged Commits
 
-Tagged commits are used to signify a major release of the documentation site. Do not use tags for any other purpose. When a tagged commit occurs, the site will be deployed to `/<tag-value>/`.
+Tagged commits are used to signify a new production release of the documentation site. **Do not use tags for any other purpose.**
 
-At the same time, the root of the documentation site will have its redirect adjusted to point at the new tagged location.
+When a tagged commit occurs, the site will be deployed to `http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/`, which can be accessed through CloudFront at  [https://d2qxiwojgs5u8k.cloudfront.net/](https://d2qxiwojgs5u8k.cloudfront.net/). The existing site is replaced.
 
-[ci-url]: https://travis-ci.org/Brightspace/valence-ui-docs
-[ci-image]: https://travis-ci.org/Brightspace/valence-ui-docs.svg?branch=master
+Caching is configured to allow browsers to cache assets for 30 minutes, so you may need to empty your browser cache to see the latest changes.
+
+[ci-url]: https://travis-ci.org/BrightspaceUI/documentation
+[ci-image]: https://travis-ci.org/BrightspaceUI/documentation.svg?branch=master
