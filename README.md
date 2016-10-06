@@ -108,17 +108,27 @@ The site is deployed to Amazon S3 during the [Travis CI build step](https://trav
 
 ### Pull Requests
 
-When a pull request is created, the site containing the changes from the pull request will be deployed to `http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/<pull-request-number>/`. Any subsequent commits to that pull request will trigger a re-deploy which overwrites the original.
+When a pull request is created, the site containing the changes from the pull request will be deployed to:
 
-To allow for further changes, browser caching of the assets is disabled.
+> http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/<pull-request-number>/
+
+Any subsequent commits to that pull request will trigger a re-deploy, which overwrites the original. To allow for these further changes, browser caching of the assets is disabled.
 
 ### Tagged Commits
 
 Tagged commits are used to signify a new production release of the documentation site. **Do not use tags for any other purpose.**
 
-When a tagged commit occurs, the site will be deployed to `http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/`, which can be accessed through CloudFront at  [https://d2qxiwojgs5u8k.cloudfront.net/](https://d2qxiwojgs5u8k.cloudfront.net/). The existing site is replaced.
+When a tagged commit occurs, the site will be deployed to:
+
+> http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/
 
 Caching is configured to allow browsers to cache assets for 30 minutes, so you may need to empty your browser cache to see the latest changes.
+
+CloudFront wraps the site and adds compression and further caching. It can be accessed at:
+
+> https://d2qxiwojgs5u8k.cloudfront.net
+
+**Note:** Because CloudFront adds its own caching layer, it will take up to 30 minutes for changes to appear.
 
 [ci-url]: https://travis-ci.org/BrightspaceUI/documentation
 [ci-image]: https://travis-ci.org/BrightspaceUI/documentation.svg?branch=master

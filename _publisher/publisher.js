@@ -6,7 +6,7 @@ var tag = process.env['TRAVIS_TAG'];
 var pr = process.env['TRAVIS_PULL_REQUEST'];
 var prefix = '';
 var bucket = 'brightspace-ui-docs';
-var host = 'https://d2qxiwojgs5u8k.cloudfront.net/';
+var host = 'http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/';
 if (tag !== undefined && tag !== '') {
 	isTagged = true;
 } else if(pr !== undefined && pr !== false && pr !== '' && pr !== 'false') {
