@@ -1,5 +1,6 @@
 ---
 title: Accessibility
+permalink: /accessibility/
 ---
 
 Web accessibility is all about ensuring people with disabilities have equal access to information and functionality on the web. Brightspace UI's components will help you with accessibility when they can, but your application's accessibility is ultimately your responsibility. If you use semantic markup, follow web standards, and put in a bit of extra effort, your application can be accessible to everyone.

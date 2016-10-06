@@ -9,11 +9,11 @@
 			"items": [
 				{
 					"text": "Color",
-					"url": "style/color.html"
+					"url": "style/color/"
 				},
 				{
 					"text": "Iconography",
-					"url": "style/iconography.html"
+					"url": "style/iconography/"
 				}
 			]
 		},
@@ -22,11 +22,11 @@
 			"items": [
 				{
 					"text": "Buttons",
-					"url": "components/buttons.html"
+					"url": "components/buttons/"
 				},
 				{
 					"text": "Links",
-					"url": "components/links.html"
+					"url": "components/links/"
 				}
 			]
 		},
@@ -35,25 +35,25 @@
 			"items": [
 				{
 					"text": "Web Components",
-					"url": "developers/web-components.html"
+					"url": "developers/web-components/"
 				},
 				{
 					"text": "Use Components",
-					"url": "developers/use-components.html"
+					"url": "developers/use-components/"
 				},
 				{
 					"text": "Optimize for Production",
-					"url": "developers/optimize-for-production.html"
+					"url": "developers/optimize-for-production/"
 				},
 				{
 					"text": "Resources",
-					"url": "developers/resources.html"
+					"url": "developers/resources/"
 				}
 			]
 		},
 		{
 			"text": "Accessibility",
-			"url": "accessibility.html"
+			"url": "accessibility/"
 		}
 	]
 }
