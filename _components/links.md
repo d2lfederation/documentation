@@ -36,6 +36,10 @@ To create a link with a smaller font-size, add the `small` attribute:
 <a is="d2l-link" small>Small Link</a>
 {% endexample %}
 
+## Links with Icons
+
+For cases where a clickable icon which is semantically an `<a>` is needed, see: [Clickable Icons]({{ site.baseurl }}style/iconography.html#clickable-icons).
+
 ## Developing with Links
 
 {% include bower.html name=page.bower %}

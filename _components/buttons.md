@@ -33,6 +33,12 @@ To prevent a user from interacting with a button, add the standard HTML `disable
 <button is="d2l-button" disabled>Disabled</button>
 {% endexample %}
 
+## Buttons with Icons
+
+As a best practice buttons should only contain text -- not icons on their own or an icon accompanied by text.
+
+Sometimes a clickable icon which is semantically a `<button>` is needed. In these cases, see: [Clickable Icons]({{ site.baseurl }}style/iconography.html#clickable-icons).
+
 ## Floating Workflow Buttons
 
 Longer pages which have important workflow buttons (e.g. save/cancel, next/previous) may wish to have those buttons float in a fixed position at the bottom of the screen. As the buttons are scrolled into view, they will dock at the bottom edge.
