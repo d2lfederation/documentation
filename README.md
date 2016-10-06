@@ -110,7 +110,7 @@ The site is deployed to Amazon S3 during the [Travis CI build step](https://trav
 
 When a pull request is created, the site containing the changes from the pull request will be deployed to:
 
-> http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/&lt;pull-request-number&gt;/
+> http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/%3Cpull-request-number%3E/
 
 Any subsequent commits to that pull request will trigger a re-deploy, which overwrites the original. To allow for these further changes, browser caching of the assets is disabled.
 
