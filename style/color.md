@@ -16,7 +16,7 @@ The established color palette is meant to reflect the Brightspace UI Design Prin
 It is recommended that primary colors (and variations thereof) should be used for constructing foundational page elements. Page structures such as dividers, backdrops, and containers should be created with these colors in mind. Some common elements also fall within this category.
 
 {% for color in site.data.colors.primary %}
-{% include color.html color=color %}
+{% include paint-chip.html color=color %}
 {% endfor %}
 
 ### Secondary
@@ -26,13 +26,13 @@ It is recommended that secondary colors be reserved for opportunities to showcas
 They should be used sparingly so as not to reduce their impact. Interface elements such as notifications, data visualizations, or marketing and promotional items are ideal places to make use of the secondary color palette.
 
 {% for color in site.data.colors.secondary %}
-{% include color.html color=color %}
+{% include paint-chip.html color=color %}
 {% endfor %}
 
 ### Grey
 
 {% for color in site.data.colors.grey %}
-{% include color.html color=color %}
+{% include paint-chip.html color=color %}
 {% endfor %}
 
 ### Tonal Contouring
@@ -40,7 +40,7 @@ They should be used sparingly so as not to reduce their impact. Interface elemen
 Several elements throughout the Arena design language use a two-tone approach to enhancing structure and definition. In these instances, the primary colour is used as a stroke colour with a lighter version of that same tone used as a fill colour.
 
 {% for color in site.data.colors.tonal %}
-{% include color.html color=color %}
+{% include paint-chip.html color=color %}
 {% endfor %}
 
 ## Accessibility

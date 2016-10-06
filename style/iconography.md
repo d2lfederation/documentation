@@ -37,8 +37,8 @@ The color of icons should be "tungsten" (`#72777a`). For icons which require a h
 
 {% assign tungsten = site.data.colors.grey[7] %}
 {% assign celestuba = site.data.colors.secondary[5] %}
-{% include color.html color=tungsten %}
-{% include color.html color=celestuba %}
+{% include paint-chip.html color=tungsten %}
+{% include paint-chip.html color=celestuba %}
 
 ## Accessibility
 
