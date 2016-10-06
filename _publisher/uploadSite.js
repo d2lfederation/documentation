@@ -1,4 +1,4 @@
-module.exports = function(client, prefix, isTagged) {
+module.exports = function(client, bucket, prefix, isTagged) {
 	return new Promise(function(resolve, reject) {
 
 		console.log('\tUploading...');
@@ -10,7 +10,7 @@ module.exports = function(client, prefix, isTagged) {
 			localDir: '_site',
 			deleteRemoved: true,
 			s3Params: {
-				Bucket: 'brightspace-ui-docs',
+				Bucket: bucket,
 				Prefix: prefix,
 				ACL: 'public-read',
 				CacheControl: cache
