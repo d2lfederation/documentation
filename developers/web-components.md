@@ -1,5 +1,6 @@
 ---
 title: Web Components
+permalink: /developers/web-components/
 ---
 
 The main goal of Brightspace UI: to provide reusable, accessible UI components which can easily and seamlessly integrate into your web application, no matter the technologies or frameworks being used. Server-side rendering, client-side rendering, React, Angular, vanilla HTML/JS/CSS -- Brightspace UI needs to work with them all.

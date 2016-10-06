@@ -1,5 +1,6 @@
 ---
 title: Optimize for Production
+permalink: /developers/optimize-for-production/
 ---
 
 When building a high performant web application, minimizing the number and size of network requests is critical. Network requests are by far the slowest part of loading an application, especially on mobile devices where network connectivity may be more limited.

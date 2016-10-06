@@ -1,5 +1,6 @@
 ---
 title: Links
+permalink: /components/links/
 layout: component
 github: Brightspace/d2l-link-ui
 bower: d2l-link
@@ -38,7 +39,7 @@ To create a link with a smaller font-size, add the `small` attribute:
 
 ## Links with Icons
 
-For cases where a clickable icon which is semantically an `<a>` is needed, see: [Clickable Icons]({{ site.baseurl }}style/iconography.html#clickable-icons).
+For cases where a clickable icon which is semantically an `<a>` is needed, see: [Clickable Icons]({{ site.baseurl }}style/iconography/#clickable-icons).
 
 ## Developing with Links
 

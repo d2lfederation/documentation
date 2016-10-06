@@ -1,5 +1,6 @@
 ---
 title: Resources
+permalink: /developers/resources/
 ---
 
 1. [Web Components.org](http://webcomponents.org/)<br />Home of the Web Component polyfill and lots of great articles, discussions and best-practices.

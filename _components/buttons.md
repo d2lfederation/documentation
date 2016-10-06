@@ -1,5 +1,6 @@
 ---
 title: Buttons
+permalink: /components/buttons/
 layout: component
 github: Brightspace/d2l-button-ui
 bower: d2l-button
@@ -37,7 +38,7 @@ To prevent a user from interacting with a button, add the standard HTML `disable
 
 As a best practice buttons should only contain text -- not icons on their own or an icon accompanied by text.
 
-Sometimes a clickable icon which is semantically a `<button>` is needed. In these cases, see: [Clickable Icons]({{ site.baseurl }}style/iconography.html#clickable-icons).
+Sometimes a clickable icon which is semantically a `<button>` is needed. In these cases, see: [Clickable Icons]({{ site.baseurl }}style/iconography/#clickable-icons).
 
 ## Floating Workflow Buttons
 

@@ -1,5 +1,6 @@
 ---
 title: Typography
+permalink: /style/typography/
 layout: component
 description: Defines the appearance of text throughout the site.
 project: d2l-typography-ui

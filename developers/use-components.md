@@ -1,5 +1,6 @@
 ---
 title: Use Components
+permalink: /developers/use-components/
 ---
 
 ## Individual Components & Semantic Versioning
@@ -58,7 +59,7 @@ Once the Brightspace UI components are installed, the next step is to consume th
 
 ### Include the Polyfill
 
-As was mentioned in the [Introduction to Web Components]({{ site.baseurl }}developers/web-components.html), many browsers have yet to implement all (or any) of the Web Component features. Until they do, a polyfill is needed.
+As was mentioned in the [Introduction to Web Components]({{ site.baseurl }}developers/web-components/), many browsers have yet to implement all (or any) of the Web Component features. Until they do, a polyfill is needed.
 
 {% example type: shell, title: "You can install the polyfill using Bower:" %}
 bower install --save webcomponentsjs

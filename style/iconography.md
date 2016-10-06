@@ -1,5 +1,6 @@
 ---
 title: Iconography
+permalink: /style/iconography/
 layout: component
 github: Brightspace/d2l-icons-ui
 bower: d2l-icons
@@ -123,7 +124,7 @@ Alternately you can just import `d2l-icons.html` to get everything, but the impo
 <d2l-icon icon="d2l-tier1:print"></d2l-icon>
 {% endexample %}
 
-The [color of the icon](/style/color.html) will default to "tungsten", and the size will be set automatically based on the category name. Both can be customized with a `custom-style` block by setting the `--d2l-icon-height` and `--d2l-icon-width` variables:
+The [color of the icon](/style/color/) will default to "tungsten", and the size will be set automatically based on the category name. Both can be customized with a `custom-style` block by setting the `--d2l-icon-height` and `--d2l-icon-width` variables:
 
 {% example %}
 <style is="custom-style">
