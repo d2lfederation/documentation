@@ -12,6 +12,10 @@
 					"url": "style/color/"
 				},
 				{
+					"text": "Typography",
+					"url": "style/typography/"
+				},
+				{
 					"text": "Iconography",
 					"url": "style/iconography/"
 				}
