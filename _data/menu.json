@@ -31,6 +31,10 @@
 				{
 					"text": "Links",
 					"url": "components/links/"
+				},
+				{
+					"text": "Menus",
+					"url": "components/menus/"
 				}
 			]
 		},
