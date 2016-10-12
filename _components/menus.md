@@ -122,4 +122,34 @@ menu.addEventListener('d2l-menu-item-change', function(e) {
 });
 {% endexample %}
 
+## Developing with Menus
+
+{% include bower.html name=page.bower %}
+
+Then import the components you need:
+
+{% example, demo: false %}
+<!-- for normal menus -->
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu.html">
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu-item.html">
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu-item-link.html">
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu-item-separator.html">
+<!-- for checbox menu items -->
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu-item-checkbox.html">
+<!-- for radio menu items -->
+<link
+  rel="import"
+  href="bower_components/d2l-menu/d2l-menu-item-radio.html">
+{% endexample %}
+
 {% include github.html name=page.github %}
