@@ -4,7 +4,6 @@ rvm:
 before_install:
   - nvm install stable
 install:
-  - gem install jekyll pygments.rb jekyll-minibundle
   - nvm use stable
   - npm install
 script:
