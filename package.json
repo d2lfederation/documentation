@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rimraf _tmp && mkdir _tmp",
     "build": "vulcanize _assets/web-components/wc.html --out-html _tmp/wc.gen.html --inline-scripts --strip-comments",
-    "postinstall": "bower install",
+    "postinstall": "bower install && gem install jekyll pygments.rb jekyll-minibundle",
     "publish-s3": "node _publisher/publisher"
   },
   "repository": {
