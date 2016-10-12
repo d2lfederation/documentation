@@ -7,9 +7,60 @@ bower: d2l-menu
 ---
 A menu provides a list of choices for the user.
 
-To create a menu, use the `d2l-menu` element and provide a `label` to describe the menu.  Items are added to the menu using either `d2l-menu-item` or `d2l-menu-item-link` and providing a `text` attribute for each item. Menu items can be visually separated by using the `d2l-menu-item-separator` element.  
+To create a menu, use the `d2l-menu` element and provide a `label` to describe the menu.  Add items to the menu by using the `d2l-menu-item` element and providing a `text` attribute for each item.
 
-In addition, menus can be nested by adding a `d2l-menu` element to a `d2l-menu-item`.  
+{% example %}
+<d2l-menu label="Astronomy">
+  <d2l-menu-item text="Introduction"></d2l-menu-item>
+  <d2l-menu-item text="The Solar System"></d2l-menu-item>
+  <d2l-menu-item text="The Universe"></d2l-menu-item>
+</d2l-menu>
+{% endexample %}
+
+{% a11y Provide Descriptive Label %}
+Provide a `label` for the root `d2l-menu` element so that assistive technologies can provide context to users. Avoid ambiguous labels such as "menu". A label should not be provided for nested menus since the label will be inherited from its parent `d2l-menu-item`.
+{% enda11y %}
+
+To handle item selection in JavaScript, simply add an event handler for the `d2l-menu-item-select` event.
+
+{% example type: javascript %}
+menu.addEventListener('d2l-menu-item-select', function(e) {
+  console.log('item selected:', e.target);
+});
+{% endexample %}
+
+### Menu Item Links
+
+The `d2l-menu-item-link` element can be used to provide real link semantics for menu items (ex. enable users to right-click and open in new tab). As with other menu items, provide a `text` attribute for the text to be displayed.  Specify an `href` attribute for the link location.
+
+{% example %}
+<d2l-menu label="Astronomy">
+  <d2l-menu-item-link text="Introduction"
+    href="http://.../"></d2l-menu-item-link>
+  <d2l-menu-item-link text="The Solar System"
+    href="http://.../"></d2l-menu-item-link>
+  <d2l-menu-item-link text="The Universe"
+    href="http://.../"></d2l-menu-item-link>
+</d2l-menu>
+{% endexample %}
+
+### Menu Item Separators
+
+The `d2l-menu-item-separator` element is a divider that separates and distinguishes items in a `d2l-menu`.
+
+{% example %}
+<d2l-menu label="Astronomy">
+  <d2l-menu-item text="Introduction"></d2l-menu-item>
+  <d2l-menu-item text="The Solar System"></d2l-menu-item>
+  <d2l-menu-item text="The Universe"></d2l-menu-item>
+  <d2l-menu-item-separator></d2l-menu-item-separator>
+  <d2l-menu-item text="Upcoming Events"></d2l-menu-item>
+</d2l-menu>
+{% endexample %}
+
+### Nested Menus
+
+Nested menus can be created by adding a `d2l-menu` element to a `d2l-menu-item` element. As with regular menu items, provide a `text` attribute for the item text.  The `text` attribute will also be used for the nested menu label. To provide a way for users to return to the parent menu, a menu item will be automatically added to the top of the nested menu.
 
 {% example %}
 <d2l-menu label="Astronomy">
@@ -22,37 +73,12 @@ In addition, menus can be nested by adding a `d2l-menu` element to a `d2l-menu-i
    </d2l-menu>
   </d2l-menu-item>
   <d2l-menu-item text="The Universe"></d2l-menu-item>
-  <d2l-menu-item-separator></d2l-menu-item-separator>
-  <d2l-menu-item-link text="Upcoming Events" href="http://.../">
-  </d2l-menu-item-link>
 </d2l-menu>
 {% endexample %}
 
-{% a11y Provide Descriptive Label %}
-Provide a `label` for the root `d2l-menu` element so that assistive technologies can provide context to users. Avoid ambiguous labels such as "menu". A label should not be provided for nested menus since the label will be inherited from its parent `d2l-menu-item`.
-{% enda11y %}
-
-### Menu Items
-
-The `d2l-menu-item` element is used for either handling item selection with JavaScript, or for nesting menus. Provide a `text` attribute for the text to be displayed. To handle item selection in JavaScript, simply add an event handler for the `d2l-menu-item-select` event.
-
-{% example type: javascript %}
-menu.addEventListener('d2l-menu-item-select', function(e) {
-  console.log('item selected:', e.target);
-});
-{% endexample %}
-
-### Menu Item Links
-
-The `d2l-menu-item-link` element is used to provide real link semantics for menu items (ex. enable users to right-click and open in new tab). Provide a `text` attribute for the text to be displayed, and an `href` attribute for the link location.  Menu item links should have no children.
-
-### Menu Item Separators
-
-The `d2l-menu-item-separator` element is used to visually separate menu items within a menu.
-
 ### Menu Item Checkboxes
 
-A checkbox menu can be created by adding `d2l-menu-item-checkbox` elements to a `d2l-menu`. As with regular menu items, provide a `text` attribute for the text to be displayed.  Optionally specify the `selected` attribute to set the state of the items.
+A checkbox menu can be created by adding `d2l-menu-item-checkbox` elements to a `d2l-menu`. As with other menu items, provide a `text` attribute for the text to be displayed.  Optionally specify the `selected` attribute to set the state of the items.
 
 {% example %}
 <d2l-menu label="Astronomy">
@@ -75,7 +101,7 @@ menu.addEventListener('d2l-menu-item-change', function(e) {
 
 ### Menu Item Radios
 
-A radio menu can be created by adding `d2l-menu-item-radio` elements to a `d2l-menu`. As with regular menu items, provide a `text` attribute for the text to be displayed. Each radio item must have a `value` attribute that is unique within the context of the menu. Optionally specify the `selected` attribute to set the state of the items.
+A radio menu can be created by adding `d2l-menu-item-radio` elements to a `d2l-menu`. As with other menu items, provide a `text` attribute for the text to be displayed. Each radio item must have a `value` attribute that is unique within the context of the menu. Optionally specify the `selected` attribute to set the state of the items.
 
 {% example %}
 <d2l-menu label="Astronomy">
@@ -95,3 +121,5 @@ menu.addEventListener('d2l-menu-item-change', function(e) {
   console.log('item:', e.target);
 });
 {% endexample %}
+
+{% include github.html name=page.github %}
