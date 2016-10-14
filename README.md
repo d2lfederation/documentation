@@ -1,7 +1,7 @@
 # Brightspace UI Documentation
 [![Build status][ci-image]][ci-url]
 
-Source files for generating the documentation for Brightspace UI at [https://d2qxiwojgs5u8k.cloudfront.net](https://d2qxiwojgs5u8k.cloudfront.net/).
+Source files for generating the documentation for Brightspace UI at [http://d2qxiwojgs5u8k.cloudfront.net](http://d2qxiwojgs5u8k.cloudfront.net/).
 
 ## Installation & Setup
 
@@ -110,7 +110,7 @@ The site is deployed to Amazon S3 during the [Travis CI build step](https://trav
 
 When a pull request is created, the site containing the changes from the pull request will be deployed to:
 
-> http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/pr/pull-request-number/
+> http://ui-dev.developers.brightspace.com.s3-website-us-east-1.amazonaws.com/pr/pull-request-number/
 
 Any subsequent commits to that pull request will trigger a re-deploy, which overwrites the original. To allow for these further changes, browser caching of the assets is disabled.
 
@@ -120,13 +120,13 @@ Tagged commits are used to signify a new production release of the documentation
 
 When a tagged commit occurs, the site will be deployed to:
 
-> http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/
+> http://ui.developers.brightspace.com.s3-website-us-east-1.amazonaws.com/
 
 Caching is configured to allow browsers to cache assets for 30 minutes, so you may need to empty your browser cache to see the latest changes.
 
 CloudFront wraps the site and adds compression and further caching. It can be accessed at:
 
-> https://d2qxiwojgs5u8k.cloudfront.net
+> http://d2qxiwojgs5u8k.cloudfront.net
 
 **Note:** Because CloudFront adds its own caching layer, it will take up to 30 minutes for changes to appear.
 

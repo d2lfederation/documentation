@@ -5,14 +5,14 @@ var isTagged = false;
 var tag = process.env['TRAVIS_TAG'];
 var pr = process.env['TRAVIS_PULL_REQUEST'];
 var prefix = '';
-var bucket = 'brightspace-ui-docs';
-var host = 'http://brightspace-ui-docs.s3-website-us-east-1.amazonaws.com/';
+var bucket = 'ui.developers.brightspace.com';
+var host = 'http://ui.developers.brightspace.com.s3-website-us-east-1.amazonaws.com/';
 if (tag !== undefined && tag !== '') {
 	isTagged = true;
 } else if(pr !== undefined && pr !== false && pr !== '' && pr !== 'false') {
-	bucket = 'brightspace-ui-docs-dev';
+	bucket = 'ui-dev.developers.brightspace.com';
 	prefix = 'pr/' + pr;
-	host = 'http://brightspace-ui-docs-dev.s3-website-us-east-1.amazonaws.com/'
+	host = 'http://ui-dev.developers.brightspace.com.s3-website-us-east-1.amazonaws.com/'
 } else {
 	console.log('Not a tagged commit or a pull request, skipping deployment.');
 	return process.exit(0);
