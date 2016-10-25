@@ -7,7 +7,7 @@ $baseurl: "{{ site.baseurl }}";
 $header-height: 60px;
 $base-font-size: 20px;
 $side-nav-width: 280px;
-$menu-breakpoint: 700px;
+$menu-breakpoint: 800px;
 $reading-width: 800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -16,7 +16,6 @@ $reading-width: 800px;
 		"example",
 		"footer",
 		"header",
-		"home",
 		"layout",
 		"note",
 		"paint-chip",
