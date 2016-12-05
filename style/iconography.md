@@ -2,7 +2,7 @@
 title: Iconography
 permalink: /style/iconography/
 layout: component
-github: Brightspace/d2l-icons-ui
+github: BrightspaceUI/icons
 bower: d2l-icons
 ---
 The design language employs a 3 tier hierarchy for the use of icons. These tiers dictate the proper placement and usage of the icon library.

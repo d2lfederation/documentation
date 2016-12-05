@@ -3,7 +3,7 @@ title: Color
 permalink: /style/color/
 layout: component
 bower: d2l-colors
-github: Brightspace/d2l-colors-ui
+github: BrightspaceUI/colors
 ---
 ## Color Palette
 
