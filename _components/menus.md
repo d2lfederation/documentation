@@ -2,7 +2,7 @@
 title: Menus
 permalink: /components/menus/
 layout: component
-github: Brightspace/d2l-menu-ui
+github: BrightspaceUI/menu
 bower: d2l-menu
 ---
 A menu provides a list of choices for the user.

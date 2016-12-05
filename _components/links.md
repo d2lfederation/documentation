@@ -2,7 +2,7 @@
 title: Links
 permalink: /components/links/
 layout: component
-github: Brightspace/d2l-link-ui
+github: BrightspaceUI/link
 bower: d2l-link
 ---
 A link is a hyperlink from one page to another.

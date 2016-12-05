@@ -2,7 +2,7 @@
 title: Buttons
 permalink: /components/buttons/
 layout: component
-github: Brightspace/d2l-button-ui
+github: BrightspaceUI/button
 bower: d2l-button
 ---
 A button indicates a user action.

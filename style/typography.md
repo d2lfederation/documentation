@@ -3,7 +3,7 @@ title: Typography
 permalink: /style/typography/
 layout: component
 bower: d2l-typography
-github: Brightspace/d2l-typography-ui
+github: BrightspaceUI/typography
 ---
 Brightspace UI typography styles can be applied to the various types of textual elements using CSS classes.
 
