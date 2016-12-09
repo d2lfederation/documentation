@@ -1,7 +1,7 @@
 # Brightspace UI Documentation
 [![Build status][ci-image]][ci-url]
 
-Source files for generating the documentation for Brightspace UI at [https://d2qxiwojgs5u8k.cloudfront.net](https://d2qxiwojgs5u8k.cloudfront.net/).
+Source files for generating the documentation for Brightspace UI at [http://ui.developers.brightspace.com/](http://ui.developers.brightspace.com/).
 
 ## Installation & Setup
 
@@ -126,7 +126,7 @@ Caching is configured to allow browsers to cache assets for 30 minutes, so you m
 
 CloudFront wraps the site and adds compression and further caching. It can be accessed at:
 
-> https://d2qxiwojgs5u8k.cloudfront.net
+> http://ui.developers.brightspace.com/
 
 **Note:** Because CloudFront adds its own caching layer, it will take up to 30 minutes for changes to appear.
 
