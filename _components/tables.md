@@ -7,7 +7,40 @@ bower: d2l-table
 ---
 A responsive styled table.
 
-To create a table, extend the native HTML `<table>` element with with the `is="d2l-table"` custom element and optionally surround it with a `<d2l-table-wrapper>` element.
+To create a table, extend the native HTML `<table>` element with with the `is="d2l-table"` custom element and optionally surround it with a `<d2l-table-wrapper>` element. There is a slight performance gain when surrounding the `<table>` with a `<d2l-table-wrapper>`.
+
+{% example %}
+<d2l-table-wrapper>
+	<table is="d2l-table">
+		<thead>
+		<tr>
+			<th>First Name</th>
+			<th>Middle Name</th>
+			<th>Last Name</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Darlene</td>
+			<td>Bridget</td>
+			<td>Waters</td>
+		</tr>
+		<tr header>
+			<th colspan="3">Inline header</th>
+		</tr>
+		<tr>
+			<td>David</td>
+			<td>Robert</td>
+			<td>Sandoval</td>
+		</tr>
+		</tbody>
+	</table>
+</d2l-table-wrapper>
+{% endexample %}
+
+## Sorting attributes
+
+To create a sort button (it is just a button. It won't do anything), extend the native HTML `<table>` element with the `is="d2l-table-col-sort-button"`. The sort button accepts the `desc` attribute to indicate the sort direction is descending (by default it is ascending). The `nosort` attribute indicate field could be sorted, but is currently not.
 
 {% example %}
 <d2l-table-wrapper>
@@ -28,9 +61,6 @@ To create a table, extend the native HTML `<table>` element with with the `is="d
 			<td>123</td>
 			<td>654</td>
 			<td>654</td>
-		</tr>
-		<tr header>
-			<th colspan="3">Inline Header</th>
 		</tr>
 		<tr>
 			<td>456</td>
@@ -44,40 +74,34 @@ To create a table, extend the native HTML `<table>` element with with the `is="d
 
 ## Responsive
 
-The d2l-table is automatically responsive
+The table is responsive. When a table is wider than a user's screen, arrows will appear which allow the user to scroll the table back and forth.
 
-{% example %}
 <d2l-table-wrapper style="max-width: 200px;">
 	<table is="d2l-table">
 		<thead>
-			<th>
-				<button is="d2l-table-col-sort-button">Ascending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" desc>Descending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" nosort>Not sorted</button>
-			</th>
+		<tr>
+			<th>First Name</th>
+			<th>Middle Name</th>
+			<th>Last Name</th>
+		</tr>
 		</thead>
 		<tbody>
 		<tr>
-			<td>123</td>
-			<td>654</td>
-			<td>654</td>
+			<td>Darlene</td>
+			<td>Bridget</td>
+			<td>Waters</td>
 		</tr>
 		<tr header>
-			<th colspan="3">Inline Header</th>
+			<th colspan="3">Inline header</th>
 		</tr>
 		<tr>
-			<td>456</td>
-			<td>321</td>
-			<td>321</td>
+			<td>David</td>
+			<td>Robert</td>
+			<td>Sandoval</td>
 		</tr>
 		</tbody>
 	</table>
 </d2l-table-wrapper>
-{% endexample %}
 
 ## No column border
 
@@ -87,29 +111,22 @@ To disable column borders, add the `no-column-border` attribute to the `table` e
 <d2l-table-wrapper>
 	<table is="d2l-table" no-column-border>
 		<thead>
-			<th>
-				<button is="d2l-table-col-sort-button">Ascending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" desc>Descending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" nosort>Not sorted</button>
-			</th>
+		<tr>
+			<th>First Name</th>
+			<th>Middle Name</th>
+			<th>Last Name</th>
+		</tr>
 		</thead>
 		<tbody>
-		<tr>
-			<td>123</td>
-			<td>654</td>
-			<td>654</td>
-		</tr>
-		<tr header>
-			<th colspan="3">Inline Header</th>
+		<tr selected active>
+			<td>Darlene</td>
+			<td>Bridget</td>
+			<td>Waters</td>
 		</tr>
 		<tr>
-			<td>456</td>
-			<td>321</td>
-			<td>321</td>
+			<td>David</td>
+			<td>Robert</td>
+			<td>Sandoval</td>
 		</tr>
 		</tbody>
 	</table>
@@ -118,104 +135,31 @@ To disable column borders, add the `no-column-border` attribute to the `table` e
 
 ## Selectable
 
-To select a row, add the `selected` attribute to the `tr` element. To make a table rows respond to hovering, add the `selectable` attribute to the `table` element.
+To hint that rows are selectable with a hover effect, add the `selectable` attribute to the `table` element. To set a row as being selected, add the `selected` attribute to its `tr` element.
 
 {% example %}
 <d2l-table-wrapper>
 	<table is="d2l-table" selectable>
 		<thead>
-			<th>
-				<button	is="d2l-table-col-sort-button">Ascending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" desc>Descending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" nosort>Not sorted</button>
-			</th>
+		<tr>
+			<th>First Name</th>
+			<th>Middle Name</th>
+			<th>Last Name</th>
+		</tr>
 		</thead>
 		<tbody>
 		<tr selected active>
-			<td>123</td>
-			<td>654</td>
-			<td>654</td>
+			<td>Darlene</td>
+			<td>Bridget</td>
+			<td>Waters</td>
 		</tr>
 		<tr header>
-			<th colspan="3">Inline Header</th>
+			<th colspan="3">Inline header</th>
 		</tr>
 		<tr>
-			<td>456</td>
-			<td>321</td>
-			<td>321</td>
-		</tr>
-		</tbody>
-	</table>
-</d2l-table-wrapper>
-{% endexample %}
-
-## Styling
-
-Custom property | Description | Default
-----------------|-------------|----------
-`--d2l-table-border-color` | Border Color | `var(--d2l-color-titanius)` |
-`--d2l-table-border-radius` | Corner Border Radius | `0.3rem` |
-`--d2l-table-border` | Border | `1px solid var(--d2l-table-border-color);` |
-`--d2l-table-header-background-color` | Header background color (th elements under `<thead>` or `<tr header>`) | `var(--d2l-color-regolith);` |
-`--d2l-table-body-background-color` | Body background color (non-header) | `#fff` |
-`--d2l-table-row-background-color-active` | Active row background color | `var(--d2l-color-celestine-light-1)` |
-`--d2l-table-row-border-color-selected` | Selected row border color | `var(--d2l-color-celestine-light-2)` |
-`--d2l-table-row-border-color-active-selected` | Active and Selected row border color | `var(--d2l-color-celestine-light-2)` |
-`--d2l-table-row-background-color-active-selected` | Active and Selected row background color | `#EBF5FC` |
-`--d2l-table-row-background-color-selected` | Selected row background color | `var(--d2l-color-celestine-light-1)` |
-`--d2l-table-border-overflow` | Border to show when the table overflows | `dashed 1px #d3d9e3` |
-`--d2l-table-outer-border` | Border to show around the table | `var(--d2l-table-border)` |
-`--d2l-table-outer-row-border-color-selected` | Border color of selected rows around the table | `var(--d2l-table-row-border-color-selected)` |
-`--d2l-table-outer-row-border-color-active-selected` | Border color of active and selected rows around the table | `var(--d2l-table-row-border-color-active-selected)` |
-
-{% example %}
-<style is="custom-style">
-.ugly-table {
-	--d2l-table-border-color: purple;
-	--d2l-table-border-radius: 0;
-	--d2l-table-header-background-color: turquoise;
-	--d2l-table-body-background-color: grey;
-	--d2l-table-row-background-color-active: blue;
-	--d2l-table-row-border-color-selected: grey;
-	--d2l-table-row-border-color-active-selected: black;
-	--d2l-table-row-background-color-active-selected: red;
-	--d2l-table-row-background-color-selected: pink;
-	--d2l-table-outer-border: 1px solid orange;
-	--d2l-table-outer-row-border-color-selected: yellow;
-	--d2l-table-outer-row-border-color-active-selected: green;
-}
-</style>
-
-<d2l-table-wrapper>
-	<table is="d2l-table" class="ugly-table" selectable>
-		<thead>
-			<th>
-				<button	is="d2l-table-col-sort-button">Ascending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" desc>Descending</button>
-			</th>
-			<th>
-				<button is="d2l-table-col-sort-button" nosort>Not sorted</button>
-			</th>
-		</thead>
-		<tbody>
-		<tr selected active>
-			<td>123</td>
-			<td>654</td>
-			<td>654</td>
-		</tr>
-		<tr header>
-			<th colspan="3">Inline Header</th>
-		</tr>
-		<tr>
-			<td>456</td>
-			<td>321</td>
-			<td>321</td>
+			<td>David</td>
+			<td>Robert</td>
+			<td>Sandoval</td>
 		</tr>
 		</tbody>
 	</table>
