@@ -35,6 +35,10 @@
 				{
 					"text": "Menus",
 					"url": "components/menus/"
+				},
+				{
+					"text": "Tables",
+					"url": "components/tables/"
 				}
 			]
 		},
