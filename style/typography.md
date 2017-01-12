@@ -37,17 +37,40 @@ html {
 }
 {% endexample %}
 
-## Compact Body
+## Body Styles
 
-The compact body class is a smaller version of the default body class, for use in areas that prefer to be conservative with the amount of real estate used by text.
+There are three body style classes. Each has a CSS class that can be used on any container. These typography styles will respond to viewport width changes.
 
-The compact style is not recommended for blocks of readable text, particularly in paragraph form. Rather, it is best employed for brief informative text or calls to action.
+### Standard
 
-Use the `d2l-body-compact` CSS class on any container:
+The standard body class is the same as the base typography style.
+Use it by applying the `d2l-body-standard` class:
+
+{% example %}
+<div class="d2l-body-standard">
+  Standard body text.
+</div>
+{% endexample %}
+
+### Compact
+
+The compact body class is a smaller version of the default body class, for use in areas that prefer to be conservative with the amount of real estate used by text. This style is not recommended for blocks of readable text, particularly in paragraph form. Rather, it is best employed for brief informative text or calls to action.
+Use it by applying the `d2l-body-compact` class:
 
 {% example %}
 <div class="d2l-body-compact">
-  Compact example
+  Compact body text.
+</div>
+{% endexample %}
+
+### Small
+
+The small body class can be used to set font properties for text that needs to be smaller than the standard body class. Unlike the compact body class, this style is appropriate for blocks of readable text.
+Use the `d2l-body-small` class:
+
+{% example %}
+<div class="d2l-body-small">
+  Small body text.
 </div>
 {% endexample %}
 
