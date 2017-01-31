@@ -33,11 +33,11 @@ Always choose the icon whose native size best matches your desired icon size, id
 
 ## Color
 
-The color of icons should be "tungsten" (`#72777a`). For icons which require a hover/focus effect, the color should change to "celestuba" (`#1c5295`) with a `0.3s ease` transition.
+The color of icons should be "ferrite" (`#565a5c`). For icons which require a hover/focus effect, the color should change to "celestuba" (`#1c5295`) with a `0.3s ease` transition.
 
-{% assign tungsten = site.data.colors.grey[7] %}
+{% assign ferrite = site.data.colors.grey[8] %}
 {% assign celestuba = site.data.colors.secondary[5] %}
-{% include paint-chip.html color=tungsten %}
+{% include paint-chip.html color=ferrite %}
 {% include paint-chip.html color=celestuba %}
 
 ## Accessibility
@@ -124,7 +124,7 @@ Alternately you can just import `d2l-icons.html` to get everything, but the impo
 <d2l-icon icon="d2l-tier1:print"></d2l-icon>
 {% endexample %}
 
-The [color of the icon](/style/color/) will default to "tungsten", and the size will be set automatically based on the category name. Both can be customized with a `custom-style` block by setting the `--d2l-icon-height` and `--d2l-icon-width` variables:
+The [color of the icon](/style/color/) will default to "ferrite", and the size will be set automatically based on the category name. Both can be customized with a `custom-style` block by setting the `--d2l-icon-height` and `--d2l-icon-width` variables:
 
 {% example %}
 <style is="custom-style">
