@@ -71,20 +71,24 @@ WC 1.4.1: Understanding Use of Color
 
 Each of the colors in the Brightspace UI palette are exposed as Polymer variables.
 
-To use them, import `d2l-colors.html` and include `d2l-colors` in a `custom-style` block:
+To use them, import `d2l-colors.html` and use a `custom-style` block:
 
 {% example, demo: false %}
 <head>
   <link
     rel="import"
     href="bower_components/d2l-colors/d2l-colors.html">
-  <style is="custom-style" include="d2l-colors">
+  <style is="custom-style">
     div {
       background-color: var(--d2l-color-saphirella);
     }
   </style>
 </head>
 {% endexample %}
+
+{% note %}
+Inside web components, the `custom-style` block can be omitted.
+{% endnote %}
 
 Each color's variable name will be in the form: `--d2l-color-<name>`. The complete list of variable names can be found [in the source code](https://github.com/Brightspace/d2l-colors-ui/blob/master/d2l-colors.html).
 
