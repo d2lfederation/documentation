@@ -29,6 +29,10 @@
 					"url": "components/buttons/"
 				},
 				{
+					"text": "Dropdowns",
+					"url": "components/dropdowns/"
+				},
+				{
 					"text": "Links",
 					"url": "components/links/"
 				},
