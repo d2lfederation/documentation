@@ -11,7 +11,7 @@ To create a dropdown, use the `d2l-dropdown` element. Provide an opener element 
 
 {% example %}
 <d2l-dropdown>
-  <button class="d2l-dropdown-opener">Open!</button>
+  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
   <d2l-dropdown-content>
       Some content...
   </d2l-dropdown-content>
