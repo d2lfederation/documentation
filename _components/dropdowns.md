@@ -32,6 +32,8 @@ By default, the dropdown content is not rendering in the DOM until the dropdown 
 
 ## Dropdown Button
 
+The `d2l-dropdown-button` simplifies your mark-up and provides consistency by using a built-in `d2l-button` and standard icon.
+
 {% example %}
 <d2l-dropdown-button text="Open!" primary>
   <d2l-dropdown-content>
@@ -41,6 +43,8 @@ By default, the dropdown content is not rendering in the DOM until the dropdown 
 {% endexample %}
 
 ## Dropdown Context Menu
+
+The `d2l-dropdown-context-menu` simplifies your mark-up and provides consistency by using a built-in opener and standard icon.
 
 {% example %}
 <d2l-dropdown-context-menu text="Open!">
