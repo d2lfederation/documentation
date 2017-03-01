@@ -20,7 +20,7 @@ To create a dropdown, use the `d2l-dropdown` element. Provide an opener element 
 
 ### Dropdown Content Options
 
-The `d2l-dropdown-content` component supports a number of optional attributes to configure it's appearance and behavior.
+The `d2l-dropdown-content` component supports a number of optional attributes to configure its appearance and behavior.
 
 {% example demo: false %}
 <d2l-dropdown-content min-width="100" max-width="500" vertical-offset="0" no-padding render-content>
@@ -28,7 +28,7 @@ The `d2l-dropdown-content` component supports a number of optional attributes to
 </d2l-dropdown-content>
 {% endexample %}
 
-By default, the dropdown content is not rendering in the DOM until the dropdown is open. If access to these DOM elements is required prior to opening, it is possible to initially force rendering using the `render-content` attribute, or calling `d2l-dropdown-content`'s `forceRender` method when needed.  
+By default, the dropdown content is not rendered in the DOM until the dropdown is open. If access to these DOM elements is required prior to opening, it is possible to initially force rendering using the `render-content` attribute, or calling `d2l-dropdown-content`'s `forceRender` method when needed.  
 
 ## Dropdown Button
 
