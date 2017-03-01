@@ -56,7 +56,7 @@ The `d2l-dropdown-context-menu` simplifies your mark-up and provides consistency
 
 ## Dropdown Menu Content
 
-The `d2l-dropdown-menu` is a special content component intended the for `d2l-menu` component.
+The `d2l-dropdown-menu` is a special content component intended the for [d2l-menu](/components/menus/) component.
 
 {% example %}
 <d2l-dropdown-button text="Open!" primary>
