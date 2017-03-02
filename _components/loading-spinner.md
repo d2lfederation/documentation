@@ -5,7 +5,7 @@ layout: component
 github: BrightspaceUI/loading-spinner
 bower: d2l-loading-spinner
 ---
-A loading-sinner component that wraps up all the elements and styles needed.
+The loading-spinner component wraps up all the elements and styles needed.
 
 To create a loading-spinner, use the `d2l-loading-spinner` element.
 
