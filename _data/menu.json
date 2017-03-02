@@ -37,6 +37,10 @@
 					"url": "components/links/"
 				},
 				{
+					"text": "Loading Spinner",
+					"url": "components/loading-spinner/"
+				},
+				{
 					"text": "Menus",
 					"url": "components/menus/"
 				},
