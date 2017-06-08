@@ -22,13 +22,28 @@ To create a dropdown, use the `d2l-dropdown` element. Provide an opener element 
 
 The `d2l-dropdown-content` component supports a number of optional attributes to configure its appearance and behavior.
 
+{% example %}
+<d2l-dropdown>
+  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
+  <d2l-dropdown-content align="start">
+      Some content...
+  </d2l-dropdown-content>
+</d2l-dropdown>
+<d2l-dropdown>
+  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
+  <d2l-dropdown-content align="end">
+      Some content...
+  </d2l-dropdown-content>
+</d2l-dropdown>
+{% endexample %}
+
 {% example demo: false %}
-<d2l-dropdown-content min-width="100" max-width="500" vertical-offset="0" no-padding render-content>
+<d2l-dropdown-content min-width="100" max-width="500" vertical-offset="0" no-padding render-content boundary='{"above":100,"below":100,"left":100,"right:100}'>
   Some content...
 </d2l-dropdown-content>
 {% endexample %}
 
-By default, the dropdown content is not rendered in the DOM until the dropdown is open. If access to these DOM elements is required prior to opening, it is possible to initially force rendering using the `render-content` attribute, or calling `d2l-dropdown-content`'s `forceRender` method when needed.  
+By default, the dropdown content is not rendered in the DOM until the dropdown is open. If access to these DOM elements is required prior to opening, it is possible to initially force rendering using the `render-content` attribute, or calling `d2l-dropdown-content`'s `forceRender` method when needed.
 
 ## Dropdown Button
 
