@@ -3,9 +3,10 @@
   "description": "Documentation for Brightspace UI",
   "private": true,
   "scripts": {
-    "prebuild": "rimraf _tmp && mkdir _tmp",
-    "build": "vulcanize _assets/web-components/wc.html --out-html _tmp/wc.gen.html --inline-scripts --strip-comments",
-    "postinstall": "bower install && gem install jekyll pygments.rb jekyll-minibundle",
+    "prebuild": "rimraf _build",
+    "build": "polymer build",
+    "postbuild": "mv build _build",
+    "postinstall": "polymer install && gem install jekyll pygments.rb jekyll-minibundle",
     "publish-s3": "node _publisher/publisher"
   },
   "repository": {
@@ -19,10 +20,9 @@
   },
   "homepage": "https://github.com/BrightspaceUI/documentation",
   "devDependencies": {
-    "bower": "^1.7.9",
-    "rimraf": "^2.5.4",
+    "polymer-cli": "^1.2.0",
+    "rimraf": "^2.6.1",
     "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d",
-    "uglify-js": "^2.7.3",
-    "vulcanize": "^1.14.8"
+    "uglify-js": "^2.8.29"
   }
 }
