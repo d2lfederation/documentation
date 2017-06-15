@@ -1,21 +1,35 @@
 @import '../bower_components/d2l-colors/d2l-colors.scss';
+@import '../bower_components/d2l-typography/d2l-typography.scss';
+
+@include d2l-typography-font-face();
 
 html {
 	font-size: $base-font-size;
 }
 
-figure {
-	margin: 0;
-	padding: 0;
-}
-
-/**
- * Basic styling
- */
 body {
+	@include d2l-typography();
 	background-color: $d2l-color-white;
 	margin: 0;
 	padding: $header-height 0 0 0;
+}
+
+h1 {
+	@include d2l-heading-1();
+}
+h2 {
+	@include d2l-heading-2();
+}
+h3 {
+	@include d2l-heading-3();
+}
+h4 {
+	@include d2l-heading-4();
+}
+
+figure {
+	margin: 0;
+	padding: 0;
 }
 
 hr {

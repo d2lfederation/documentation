@@ -14,17 +14,17 @@
   ],
   "devDependencies": {
     "d2l-button": "^3.3.0",
-    "d2l-colors": "^2.2.3",
-    "d2l-dropdown": "^5.1.0",
-    "d2l-icons": "^3.1.0",
+    "d2l-colors": "^2.3.0",
+    "d2l-dropdown": "^5.1.1",
+    "d2l-icons": "^3.2.0",
     "d2l-image-action": "^1.0.0",
-    "d2l-link": "^3.3.1",
+    "d2l-link": "^3.5.0",
     "d2l-loading-spinner": "^5.0.4",
-    "d2l-menu": "^0.3.4",
+    "d2l-menu": "^0.3.5",
     "d2l-offscreen": "^2.2.4",
-    "d2l-table": "^0.6.4",
-    "d2l-typography": "^5.2.4",
-    "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.10",
-    "polymer": "^1.7.0"
+    "d2l-table": "^0.6.7",
+    "d2l-typography": "^5.4.0",
+    "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.1.1",
+    "polymer": "^1.9.0"
   }
 }

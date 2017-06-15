@@ -18,6 +18,8 @@ collections:
     output: true
 sass:
   style: :compressed
+  load_paths:
+    - ./
 gems: ['jekyll/minibundle']
 minibundle:
   minifier_commands:
