@@ -7,41 +7,31 @@ github: BrightspaceUI/colors
 ---
 ## Color Palette
 
-The established color palette is meant to reflect the Brightspace UI Design Principles while simultaneously aligning the digital product experience with the recent Brightspace brand. By combining a light and muted backdrop with small, yet bold instances of color, the palette is able to:
-1. Set the foundation for the open, friendly, and easy to use tone of the interface; and
-2. Translate and adapt the Brightspace brand for the core desktop browser and mobile products.
+The Daylight color palette is designed to combine a white backdrop with muted grays, and small yet bold instances of color. This sets the foundation for the open, friendly, and easy to use tone of the interface.
 
-### Primary
+### Basic Grays
 
-It is recommended that primary colors (and variations thereof) should be used for constructing foundational page elements. Page structures such as dividers, backdrops, and containers should be created with these colors in mind. Some common elements also fall within this category.
+These grays are used to organize the pure white Daylight page into an information hierarchy. Icons and body text use Ferrite as the default gray.
 
-{% for color in site.data.colors.primary %}
-{% include paint-chip.html color=color %}
-{% endfor %}
+{% include paint-chip-group.html set=site.data.colors.gray size=2 %}
 
-### Secondary
+### Primary Accent
 
-It is recommended that secondary colors be reserved for opportunities to showcase movement and draw the user's attention. The colors are brighter and more vivid, pulling from the Brightspace brand.
+Daylight uses two bold primary accent colors to call attention to important foundational page elements.
 
-They should be used sparingly so as not to reduce their impact. Interface elements such as notifications, data visualizations, or marketing and promotional items are ideal places to make use of the secondary color palette.
+{% include paint-chip-group.html set=site.data.colors.primary size=2 %}
 
-{% for color in site.data.colors.secondary %}
-{% include paint-chip.html color=color %}
-{% endfor %}
+### Feedback Colours
 
-### Grey
+Four colors from the palette are used as “feedback” colors. These are to call attention to areas where the system is providing feedback to the user, as a result of direct action or asynchronous events. These include popup alerts, toasts, notifications, progress bars, completion checkmarks, etc.
 
-{% for color in site.data.colors.grey %}
-{% include paint-chip.html color=color %}
-{% endfor %}
+{% include paint-chip-group.html set=site.data.colors.feedback size=4 %}
 
-### Tonal Contouring
+### Full Palette
 
-Several elements throughout the Arena design language use a two-tone approach to enhancing structure and definition. In these instances, the primary colour is used as a stroke colour with a lighter version of that same tone used as a fill colour.
+These are all the colours in the Daylight palette. These can be used for illustration, content tiles, or course colours. Each colour has a primary tone (viewed below as the slightly “taller” swatch), supplemented three additional tints and shades.
 
-{% for color in site.data.colors.tonal %}
-{% include paint-chip.html color=color %}
-{% endfor %}
+{% include paint-chip-group.html set=site.data.colors.full size=4 %}
 
 ## Accessibility
 
@@ -78,11 +68,11 @@ To use them, import `d2l-colors.html` and use a `custom-style` block:
   <link
     rel="import"
     href="bower_components/d2l-colors/d2l-colors.html">
-  <style is="custom-style">
+  <custom-style>
     div {
-      background-color: var(--d2l-color-saphirella);
+      background-color: var(--d2l-color-cinnabar);
     }
-  </style>
+  </custom-style>
 </head>
 {% endexample %}
 
@@ -102,7 +92,7 @@ Alternatively, if you prefer [Sass](http://sass-lang.com/), you can reference th
 @import 'bower_components/d2l-colors/d2l-colors.scss';
 
 div {
-  background-color: $d2l-color-saphirella;
+  background-color: $d2l-color-cinnabar;
 }
 {% endexample %}
 
