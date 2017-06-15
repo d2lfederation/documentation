@@ -25,6 +25,6 @@
     "d2l-table": "^0.6.4",
     "d2l-typography": "^5.4.0",
     "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.10",
-    "polymer": "^1.7.0"
+    "polymer": "^1.9.0"
   }
 }
