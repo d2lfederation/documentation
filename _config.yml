@@ -4,8 +4,8 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Documentation for Brightspace UI
 baseurl: / # the subpath of your site, e.g. /blog/
-url: "http://ui.valence.d2l.com" # the base hostname & protocol for your site
-exclude: [bower_components, node_modules, vendor, bower.json, Gemfile, package.json, README.md]
+url: "http://ui.developers.brightspace.com" # the base hostname & protocol for your site
+exclude: [bower_components, build, node_modules, vendor, bower.json, Gemfile, package.json, polymer.json, README.md]
 highlighter: pygments
 defaults:
   -

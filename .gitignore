@@ -1,6 +1,6 @@
 bower_components
 node_modules
+_build
 _site
-_tmp
 .sass-cache
 Gemfile.lock
