@@ -9,22 +9,14 @@ For this reason, it's very common to concatenate an application's JavaScript and
 
 But what about HTML imports?
 
-## Vulcanize and the Polymer CLI
+## The Polymer CLI
 
-[Vulcanize](https://github.com/Polymer/vulcanize) is a tool written as part of the [Polymer CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli) that reduces an HTML file and its imports to a single file.
+[Polymer CLI](https://www.polymer-project.org/2.0/docs/tools/polymer-cli)  is Polymer's official command line tool for Polymer. It includes tools for building, optimizing, linting, testing and serving your application.
 
-Install it [using NPM](https://www.npmjs.com/package/vulcanize):
-
-{% example type: shell %}
-npm install -g vulcanize
-{% endexample %}
-
-And then give Vulcanize an input file and output location:
+Install it [using NPM](https://www.npmjs.com/package/polymer-cli):
 
 {% example type: shell %}
-vulcanize input.html > output.html
+npm install -g polymer-cli
 {% endexample %}
 
-In this example, `output.html` will contain inlined versions in place of the imports from `input.html`.
-
-There are a lot of command line flags available for tweaking how Vulcanize operates, as well as plugins for Grunt/Gulp/Broccoli -- check out the **[Vulcanize Documentation](https://github.com/Polymer/vulcanize)**.
+And then follow the [Polymer CLI documentation](https://www.polymer-project.org/2.0/docs/tools/polymer-cli) for building your application.
