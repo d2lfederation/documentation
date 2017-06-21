@@ -23,7 +23,7 @@ module Jekyll
 			@formatted = @formatter.format(@lexer.lex(@html))
 
 			@hasDemo = @type == "html"
-			if context.has_key? @attributes['demo'] and @hasDemo
+			if context.key? @attributes['demo'] and @hasDemo
 				@hasDemo = @attributes['demo'].to_s == "true"
 			end
 
@@ -34,7 +34,7 @@ module Jekyll
 
 			@hasTitle = @type != "shell"
 			@titleText = "Example (#{@type})"
-			if context.has_key? @attributes['title']
+			if context.key? @attributes['title']
 				@hasTitle = true
 				@titleText = @attributes['title'].gsub(/"/, "")
 			end
