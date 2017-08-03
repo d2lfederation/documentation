@@ -20,7 +20,7 @@ sass:
   style: :compressed
   load_paths:
     - ./
-gems: ['jekyll/minibundle']
+plugins: ['jekyll/minibundle']
 minibundle:
   minifier_commands:
     js: node_modules/.bin/uglifyjs -

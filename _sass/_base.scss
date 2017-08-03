@@ -9,7 +9,7 @@ html {
 
 body {
 	@include d2l-typography();
-	background-color: $d2l-color-white;
+	background-color: #ffffff;
 	margin: 0;
 	padding: $header-height 0 0 0;
 }
@@ -34,11 +34,11 @@ figure {
 
 hr {
 	border-top: none;
-	border-bottom: 1px solid $d2l-color-titanius;
+	border-bottom: 1px solid $d2l-color-mica;
 }
 
 blockquote {
-	border-left: 4px solid $d2l-color-titanius;
+	border-left: 4px solid $d2l-color-mica;
 	margin-left: 0;
 	padding-left: 1rem;
 }

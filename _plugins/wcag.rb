@@ -12,12 +12,12 @@ module Jekyll
 		def render(context)
 
 			@level = "a"
-			if context.has_key? @attributes['level']
+			if context.key? @attributes['level']
 				@level = @attributes['level'].gsub(/"/, "")
 			end
 
 			@url = ""
-			if context.has_key? @attributes['url']
+			if context.key? @attributes['url']
 				@url = @attributes['url'].gsub(/"/, "")
 			end
 
