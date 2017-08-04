@@ -3,4 +3,5 @@ node_modules
 _build
 _site
 .sass-cache
+npm-debug.log
 Gemfile.lock

@@ -40,7 +40,7 @@ To create a table, extend the native HTML `<table>` element with with the `is="d
 
 ## Sorting attributes
 
-To create a sort button (it is just a button. It won't do anything), extend the native HTML `<table>` element with the `is="d2l-table-col-sort-button"`. The sort button accepts the `desc` attribute to indicate the sort direction is descending (by default it is ascending). The `nosort` attribute indicate field could be sorted, but is currently not.
+To create a sort button, extend the native HTML `<table>` element with the `is="d2l-table-col-sort-button"`.  The sort button does not include any implementation.  The sort button accepts the `desc` attribute to indicate the sort direction is descending (by default it is ascending). The `nosort` attribute indicate field could be sorted, but is currently not.
 
 {% example %}
 <d2l-table-wrapper>
