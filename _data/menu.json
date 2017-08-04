@@ -45,6 +45,10 @@
 					"url": "components/menus/"
 				},
 				{
+					"text": "Page Load Progress",
+					"url": "components/page-load-progress/"
+				},
+				{
 					"text": "Tables",
 					"url": "components/tables/"
 				}
