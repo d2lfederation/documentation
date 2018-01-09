@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/BrightspaceUI/documentation",
   "devDependencies": {
-    "polymer-cli": "^1.2.0",
-    "rimraf": "^2.6.1",
+    "polymer-cli": "^1.5.7",
+    "rimraf": "^2.6.2",
     "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d",
     "uglify-js": "^3.3.5"
   }
