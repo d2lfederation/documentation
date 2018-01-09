@@ -23,4 +23,4 @@ sass:
 plugins: ['jekyll/minibundle']
 minibundle:
   minifier_commands:
-    js: node_modules/.bin/uglifyjs -
+    js: node_modules/.bin/uglifyjs
