@@ -29,8 +29,8 @@ Progress can be started, restarted and finished using the JavaScript API's `star
 
 {% example %}
 <d2l-page-load-progress id="example"></d2l-page-load-progress><br>
-<button is="d2l-button" id="start">Start</button>
-<button is="d2l-button" id="finish">Finish</button>
+<d2l-button id="start">Start</d2l-button>
+<d2l-button id="finish">Finish</d2l-button>
 <script>
 window.addEventListener('WebComponentsReady', function() {
 	var example = document.getElementById('example');

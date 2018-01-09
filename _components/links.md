@@ -7,10 +7,10 @@ bower: d2l-link
 ---
 A link is a hyperlink from one page to another.
 
-To create a Brightspace UI-styled link, extend the native HTML anchor (`<a>`) element with the `is="d2l-link"` custom element.
+To create a Brightspace UI-styled link, using the `<d2l-link>` custom element, and treat it like a native `<a>` element.
 
 {% example %}
-<a is="d2l-link">Normal Link</a>
+<d2l-link>Normal Link</d2l-link>
 {% endexample %}
 
 {% a11y Provide Descriptive Link Text %}
@@ -26,7 +26,7 @@ H30: Providing link text that describes the purpose of a link for anchor element
 For links which require more emphasis, add the `main` attribute:
 
 {% example %}
-<a is="d2l-link" main>Main Link</a>
+<d2l-link main>Main Link</d2l-link>
 {% endexample %}
 
 ## Small Links
@@ -34,7 +34,7 @@ For links which require more emphasis, add the `main` attribute:
 To create a link with a smaller font-size, add the `small` attribute:
 
 {% example %}
-<a is="d2l-link" small>Small Link</a>
+<d2l-link small>Small Link</d2l-link>
 {% endexample %}
 
 ## Links with Icons

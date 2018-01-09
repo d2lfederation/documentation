@@ -21,7 +21,7 @@ Daylight uses two bold primary accent colors to call attention to important foun
 
 {% include paint-chip-group.html set=site.data.colors.primary size=2 %}
 
-### Feedback Colours
+### Feedback Colors
 
 Four colors from the palette are used as “feedback” colors. These are to call attention to areas where the system is providing feedback to the user, as a result of direct action or asynchronous events. These include popup alerts, toasts, notifications, progress bars, completion checkmarks, etc.
 
@@ -29,7 +29,7 @@ Four colors from the palette are used as “feedback” colors. These are to cal
 
 ### Full Palette
 
-These are all the colours in the Daylight palette. These can be used for illustration, content tiles, or course colours. Each colour has a primary tone (viewed below as the slightly “taller” swatch), supplemented three additional tints and shades.
+These are all the colors in the Daylight palette. These can be used for illustration, content tiles, or course colors. Each color has a primary tone (viewed below as the slightly “taller” swatch), supplemented three additional tints and shades.
 
 {% include paint-chip-group.html set=site.data.colors.full size=4 %}
 
