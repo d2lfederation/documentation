@@ -11,7 +11,7 @@ To create a dropdown, use the `d2l-dropdown` element. Provide an opener element 
 
 {% example %}
 <d2l-dropdown>
-  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
+  <d2l-button class="d2l-dropdown-opener">Open!</d2l-button>
   <d2l-dropdown-content>
       Some content...
   </d2l-dropdown-content>
@@ -24,13 +24,13 @@ The `d2l-dropdown-content` component supports a number of optional attributes to
 
 {% example %}
 <d2l-dropdown>
-  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
+  <d2l-button class="d2l-dropdown-opener">Open!</d2l-button>
   <d2l-dropdown-content align="start">
       Some content...
   </d2l-dropdown-content>
 </d2l-dropdown>
 <d2l-dropdown>
-  <button is="d2l-button" class="d2l-dropdown-opener">Open!</button>
+  <d2l-button class="d2l-dropdown-opener">Open!</d2l-button>
   <d2l-dropdown-content align="end">
       Some content...
   </d2l-dropdown-content>

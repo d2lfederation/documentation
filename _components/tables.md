@@ -7,11 +7,12 @@ bower: d2l-table
 ---
 A responsive styled table.
 
-To create a table, extend the native HTML `<table>` element with with the `is="d2l-table"` custom element and optionally surround it with a `<d2l-table-wrapper>` element. There is a slight performance gain when surrounding the `<table>` with a `<d2l-table-wrapper>`.
+To create a table, include the `d2l-table-style`, add the CSS class `d2l-table` to native HTML `<table>` elements and wrap them with the `<d2l-table-wrapper>` custom element.
 
 {% example %}
+<style include="d2l-table-style"></style>
 <d2l-table-wrapper>
-	<table is="d2l-table">
+	<table class="d2l-table">
 		<thead>
 		<tr>
 			<th>First Name</th>
@@ -40,20 +41,20 @@ To create a table, extend the native HTML `<table>` element with with the `is="d
 
 ## Sorting attributes
 
-To create a sort button, extend the native HTML `<table>` element with the `is="d2l-table-col-sort-button"`.  The sort button does not include any implementation.  The sort button accepts the `desc` attribute to indicate the sort direction is descending (by default it is ascending). The `nosort` attribute indicate field could be sorted, but is currently not.
+To create a sort button, use the `<d2l-table-col-sort-button>` custom element.  The sort button does not include any implementation.  The sort button accepts the `desc` attribute to indicate the sort direction is descending (by default it is ascending). The `nosort` attribute indicate field could be sorted, but is currently not.
 
 {% example %}
 <d2l-table-wrapper>
-	<table is="d2l-table">
+	<table class="d2l-table">
 		<thead>
 			<th>
-				<button is="d2l-table-col-sort-button">Ascending</button>
+				<d2l-table-col-sort-button>Ascending</d2l-table-col-sort-button>
 			</th>
 			<th>
-				<button is="d2l-table-col-sort-button" desc>Descending</button>
+				<d2l-table-col-sort-button desc>Descending</d2l-table-col-sort-button>
 			</th>
 			<th>
-				<button is="d2l-table-col-sort-button" nosort>Not sorted</button>
+				<d2l-table-col-sort-button nosort>Not sorted</d2l-table-col-sort-button>
 			</th>
 		</thead>
 		<tbody>
@@ -77,7 +78,7 @@ To create a sort button, extend the native HTML `<table>` element with the `is="
 The table is responsive. When a table is wider than a user's screen, arrows will appear which allow the user to scroll the table back and forth.
 
 <d2l-table-wrapper style="max-width: 200px;">
-	<table is="d2l-table">
+	<table class="d2l-table">
 		<thead>
 		<tr>
 			<th>First Name</th>
@@ -109,7 +110,7 @@ To disable column borders, add the `no-column-border` attribute to the `table` e
 
 {% example %}
 <d2l-table-wrapper>
-	<table is="d2l-table" no-column-border>
+	<table class="d2l-table" no-column-border>
 		<thead>
 		<tr>
 			<th>First Name</th>
@@ -139,7 +140,7 @@ To hint that rows are selectable with a hover effect, add the `selectable` attri
 
 {% example %}
 <d2l-table-wrapper>
-	<table is="d2l-table" selectable>
+	<table class="d2l-table" selectable>
 		<thead>
 		<tr>
 			<th>First Name</th>

@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if page.title != site.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	<script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 	<link rel="import" href="{{ site.baseurl }}{% ministamp _build/default/_assets/web-components/wc.html assets/wc.html %}">
 	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
 	<script>

@@ -17,13 +17,50 @@ Each icon is grouped into a category, and every icon in a particular category ha
 
 Currently, there are 5 icon categories:
 
-| Name | Description | Sample | Size |
-| :----: | --- | :---: | :---: |
-| tier1 | minimal level of detail, solid style | <d2l-icon icon="d2l-tier1:print"></d2l-icon> | `18px` |
-| tier2 | medium level of detail, linear style |<d2l-icon icon="d2l-tier2:file-audio"></d2l-icon>| `24px` |
-| tier3 | medium level of detail, linear style | <d2l-icon icon="d2l-tier3:notification-bell"></d2l-icon>| `30px` |
-| html-editor | for use in the HTML editor | <d2l-icon icon="d2l-html-editor:bold"></d2l-icon> | `18px` |
-| emoji | for all your emoji needs, same detail/style as tier1 | <d2l-icon icon="d2l-emoji:happy"></d2l-icon> | `18px` |
+<d2l-table-wrapper>
+	<table class="d2l-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Sample</th>
+				<th>Size</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>tier1</th>
+				<td>minimal level of detail, solid style</td>
+				<td><d2l-icon icon="d2l-tier1:print"></d2l-icon></td>
+				<td>18px</td>
+			</tr>
+			<tr>
+				<th>tier2</th>
+				<td>medium level of detail, linear style</td>
+				<td><d2l-icon icon="d2l-tier2:file-audio"></d2l-icon></td>
+				<td>24px</td>
+			</tr>
+			<tr>
+				<th>tier3</th>
+				<td>medium level of detail, linear style</td>
+				<td><d2l-icon icon="d2l-tier3:notification-bell"></d2l-icon></td>
+				<td>30px</td>
+			</tr>
+			<tr>
+				<th>html-editor</th>
+				<td>for use in the HTML editor</td>
+				<td><d2l-icon icon="d2l-html-editor:bold"></d2l-icon></td>
+				<td>18px</td>
+			</tr>
+			<tr>
+				<th>emoji</th>
+				<td>for all your emoji needs, same detail/style as tier1</td>
+				<td><d2l-icon icon="d2l-emoji:happy"></d2l-icon></td>
+				<td>18px</td>
+			</tr>
+		</tbody>
+	</table>
+</d2l-table-wrapper>
 
 [&gt; Browse previews of all categories and icons](https://github.com/Brightspace/d2l-icons-ui/blob/master/d2l-icons.md)
 
@@ -33,10 +70,10 @@ Always choose the icon whose native size best matches your desired icon size, id
 
 ## Color
 
-The color of icons should be "ferrite" (`#565a5c`). For icons which require a hover/focus effect, the color should change to "celestuba" (`#1c5295`) with a `0.3s ease` transition.
+The color of icons should be "ferrite" (`#565a5c`). For icons which require a hover/focus effect, the color should change to "celestine-minus-1" (`#005694`) with a `0.3s ease` transition.
 
-{% assign ferrite = site.data.colors.grey[8] %}
-{% assign celestuba = site.data.colors.secondary[5] %}
+{% assign ferrite = site.data.colors.gray[1].shades[3] %}
+{% assign celestuba = site.data.colors.full[1].shades[3] %}
 {% include paint-chip.html color=ferrite %}
 {% include paint-chip.html color=celestuba %}
 
@@ -60,15 +97,11 @@ When rendered in a right-to-left direction, any icons which show directionality 
 
 The `<d2l-icon>` component ([see below](#basic-icons)) will automatically mirror directional-specific Brightspace UI icons in a right-to-left environment.
 
-{% example %}
-<p>
-  Should point to the right
-  <d2l-icon icon="d2l-tier1:chevron-right"></d2l-icon>
-</p>
-<p dir="rtl">
+{% example, demo: false %}
+<body dir="rtl">
   Should be mirrored and point to the left
   <d2l-icon icon="d2l-tier1:chevron-right"></d2l-icon>
-</p>
+</body>
 {% endexample %}
 
 To learn more about how best to determine if an icon should be mirrored, refer to [Google's Material Design Bidirectionality](https://material.google.com/usability/bidirectionality.html) documentation.

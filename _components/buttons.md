@@ -7,10 +7,10 @@ bower: d2l-button
 ---
 A button indicates a user action.
 
-To create a button, extend the native HTML `<button>` element with with the `is="d2l-button"` custom element.
+To create a button, use the `<d2l-button>` custom element, and treat it like a native `<button>` element.
 
 {% example %}
-<button is="d2l-button">Button</button>
+<d2l-button>Button</d2l-button>
 {% endexample %}
 
 ## Primary Buttons
@@ -22,8 +22,8 @@ A page should only ever have **ONE** primary button.
 {% endnote %}
 
 {% example %}
-<button is="d2l-button" primary>Yes</button>
-<button is="d2l-button">No</button>
+<d2l-button primary>Yes</d2l-button>
+<d2l-button>No</d2l-button>
 {% endexample %}
 
 ## Disabled Buttons
@@ -31,7 +31,7 @@ A page should only ever have **ONE** primary button.
 To prevent a user from interacting with a button, add the standard HTML `disabled` attribute.
 
 {% example %}
-<button is="d2l-button" disabled>Disabled</button>
+<d2l-button disabled>Disabled</d2l-button>
 {% endexample %}
 
 ## Buttons with Icons
@@ -48,8 +48,8 @@ To apply this behavior, surround your buttons in the `<d2l-floating-buttons>` we
 
 {% example demo: false %}
 <d2l-floating-buttons>
-	<button is="d2l-button">Save</button>
-	<button is="d2l-button">Cancel</button>
+	<d2l-button>Save</button>
+	<d2l-button>Cancel</button>
 </d2l-floating-buttons>
 {% endexample %}
 

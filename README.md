@@ -61,7 +61,7 @@ This block allows you to show an inline code example. It takes 3 optional parame
 
 ```markdown
 {% example type: "html", title: "Custom Title", demo: false %}
-<button is="d2l-button">Button</button>
+<d2l-button>Button</d2l-button>
 {% endexample %}
 ```
 

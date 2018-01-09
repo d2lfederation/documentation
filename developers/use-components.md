@@ -39,8 +39,8 @@ To save the list of dependencies used by your project, run `bower init` to creat
 {
 	"name": "my-project-using-brightspace-ui",
 	"dependencies": {
-		"d2l-button": "^3.0.1",
-		"d2l-icons": "^2.9.1"
+		"d2l-button": "^4.0.1",
+		"d2l-icons": "^4.5.0"
 	}
 }
 {% endexample %}
@@ -65,22 +65,19 @@ As was mentioned in the [Introduction to Web Components]({{ site.baseurl }}devel
 bower install --save webcomponentsjs
 {% endexample %}
 
-Then include the `webcomponents-lite` file as the first script tag in the `<head>` element of your application, before any code that touches the DOM:
+Then include the `webcomponents-loader.js` file as the first script tag in the `<head>` element of your application, before any code that touches the DOM:
 
 {% example demo: false %}
 <!doctype html>
 <html>
   <head>
     <script
-      src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
+      src="bower_components/webcomponentsjs/webcomponents-loader.js">
     </script>
     <!-- now you can import Brightspace UI components -->
   </head>
 </html>
 {% endexample %}
-
-An alternate approach to installing the polyfill from Bower is to reference it from the Brightspace CDN:
-[https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js](https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js)
 
 ### Import and use Components
 
@@ -95,7 +92,7 @@ The imports should happen in the `<head>` of your document, **AFTER** the polyfi
 <html>
   <head>
     <script
-      src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
+      src="bower_components/webcomponentsjs/webcomponents-loader.js">
     </script>
     <link rel="import" href="bower_components/d2l-button/d2l-button.html">
     <link rel="import" href="bower_components/d2l-link/d2l-link.html">
@@ -108,7 +105,7 @@ Finally you can reference the imported custom elements in your markup:
 
 {% example demo: false %}
 <body>
-  <button is="d2l-button">Hello</button>
+  <d2l-button>Hello</d2l-button>
   <d2l-icon icon="d2l-tier1:print"></d2l-icon>
 </body>
 {% endexample %}
