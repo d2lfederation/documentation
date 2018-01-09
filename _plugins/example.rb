@@ -44,7 +44,7 @@ module Jekyll
 				@title = "<div class=\"example-title\">#{@titleText}</div>"
 			end
 
-			"<div class=\"example\">#{@title}<div class=\"example-code\">#{@formatted}</div>#{@demo}</div>"
+			"<div class=\"example\">#{@title}<div class=\"example-code\"><pre class=\"highlight\"><code>#{@formatted}</code></pre></div>#{@demo}</div>"
 		end
 	end
 end
