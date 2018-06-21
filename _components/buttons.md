@@ -34,11 +34,25 @@ To prevent a user from interacting with a button, add the standard HTML `disable
 <d2l-button disabled>Disabled</d2l-button>
 {% endexample %}
 
-## Buttons with Icons
+## Subtle Buttons
 
-As a best practice buttons should only contain text -- not icons on their own or an icon accompanied by text.
+For buttons with advanced or de-emphasized actions, use the `<d2l-button-subtle>` component which contains text and an optional icon.
 
-Sometimes a clickable icon which is semantically a `<button>` is needed. In these cases, see: [Clickable Icons]({{ site.baseurl }}style/iconography/#clickable-icons).
+{% example %}
+<d2l-button-subtle icon="d2l-tier1:print" text="Print"></d2l-button-subtle>
+{% endexample %}
+
+## Icon Buttons
+
+For cases when it is desired to have an icon perform a clickable action, use the `<d2l-button-icon>` component.
+
+{% example %}
+<d2l-button-icon icon="d2l-tier1:home" text="Home"></d2l-button-icon>
+{% endexample %}
+
+{% a11y Always Provide Text %}
+Always provide the text attribute for a `d2l-button-icon` in order to provide a textual description. It will automatically be applied to the button `aria-label` and to the `title` attribute as a tooltip.
+{% enda11y %}
 
 ## Floating Workflow Buttons
 

@@ -170,25 +170,4 @@ The [color of the icon](/style/color/) will default to "ferrite", and the size w
 <d2l-icon id="icon-custom-demo" icon="d2l-tier1:gear"></d2l-icon>
 {% endexample %}
 
-### Clickable Icons
-
-Oftentimes an icon's purpose is more than informative -- clicking the icon performs a user action (e.g. print) or navigates the user to a different place in the application. For these cases there are two components which extend `d2l-icon` with clickable functionality: `<d2l-icon-button>` and `<d2l-icon-link>`.
-
-{% important Buttons vs. Links %}
-Use a **button** when the user is performing an action (like submitting a form), or when there is no obvious `href` to apply.
-
-Use an **anchor** when the opposite is true: when the user is navigating somewhere with a clear `href`. Ask yourself: would the user expect to right-click the element and "open in new tab"? If yes, it should be a link.
-{% endimportant %}
-
-Both components are extensions of the standard HTML `<button>` and `<a>` tags, but have an `icon` property which lights up on hover/focus.
-
-{% example %}
-<button is="d2l-icon-button" icon="d2l-tier1:print">Print</button>&nbsp;&nbsp;&nbsp;&nbsp;
-<a is="d2l-icon-link" icon="d2l-tier1:home" href="/">Home</a>
-{% endexample %}
-
-{% a11y Always Provide Text %}
-Just as with standard buttons and links, always provide a textual description of the action/link. It will automatically be placed offscreen and applied to the `title` attribute as a tooltip.
-{% enda11y %}
-
 {% include github.html name=page.github %}
