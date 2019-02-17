@@ -24,5 +24,6 @@
     "rimraf": "^2.6.2",
     "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d",
     "uglify-js": "^3.3.5"
-  }
+  },
+  "version": "2.1.1"
 }
